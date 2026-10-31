@@ -107,6 +107,9 @@ function mostrarVistaVacio(mensaje) {
           ${escapar(mensaje)}
         </p>
         <div style="display: flex; gap: var(--espacio-m); justify-content: center; flex-wrap: wrap;">
+          <button type="button" id="btn-ia-vacio" class="btn btn--acento">
+            ✨ Generar palabras con IA
+          </button>
           <a href="/paginas/tema.html?id=${escapar(temaActual.id)}" class="btn btn--primario">
             Repasar el tema pedagógico
           </a>
@@ -126,6 +129,11 @@ function mostrarVistaVacio(mensaje) {
       palabrasUsadas.clear();
       iniciarRonda();
     });
+  }
+
+  const btnIaVacio = document.getElementById('btn-ia-vacio');
+  if (btnIaVacio) {
+    btnIaVacio.addEventListener('click', manejarGenerarPalabrasAhorcado);
   }
 }
 
@@ -169,8 +177,13 @@ function renderizarTablero() {
           <h1 class="ahorcado-cabecera__titulo">Adivina la Palabra</h1>
           <span class="ahorcado-cabecera__tema">Tema: ${escapar(temaActual.titulo)}</span>
         </div>
-        <div style="font-size: var(--texto-s); color: var(--color-texto-suave);">
-          Palabras resueltas: <strong>${palabrasUsadas.size} / ${palabrasDisponibles.length}</strong>
+        <div style="display: flex; gap: var(--espacio-s); align-items: center; flex-wrap: wrap;">
+          <button type="button" class="btn btn--acento btn--pequeno" id="btn-ia-ahorcado" title="Generar nuevas palabras con Inteligencia Artificial">
+            ✨ Generar con IA
+          </button>
+          <div style="font-size: var(--texto-s); color: var(--color-texto-suave);">
+            Palabras resueltas: <strong>${palabrasUsadas.size} / ${palabrasDisponibles.length}</strong>
+          </div>
         </div>
       </header>
 
@@ -244,6 +257,55 @@ function renderizarTablero() {
     btnOtra.addEventListener('click', () => {
       iniciarRonda();
     });
+  }
+
+  // Evento botón Generar con IA
+  const btnIa = document.getElementById('btn-ia-ahorcado');
+  if (btnIa) {
+    btnIa.addEventListener('click', manejarGenerarPalabrasAhorcado);
+  }
+}
+
+async function manejarGenerarPalabrasAhorcado() {
+  if (!temaActual) return;
+  const btnIa = document.getElementById('btn-ia-ahorcado') || document.getElementById('btn-ia-vacio');
+  const txtOrig = btnIa ? btnIa.innerHTML : '';
+  if (btnIa) {
+    btnIa.disabled = true;
+    btnIa.innerHTML = '⏳ Generando con IA...';
+  }
+
+  try {
+    const resp = await api.crear('ia/generar-glosario', { temaId: temaActual.id, cantidad: 8 });
+    const nuevos = (resp && Array.isArray(resp.guardados) && resp.guardados.length > 0)
+      ? resp.guardados
+      : (resp?.generados || resp?.palabras || []);
+
+    if (!nuevos || nuevos.length === 0) {
+      aviso('No se pudieron obtener palabras nuevas en este momento.', 'info');
+      return;
+    }
+
+    const validas = nuevos.filter(t => {
+      if (!t || !t.termino) return false;
+      const norm = normalizar(t.termino);
+      return /^[A-ZÑ]+$/.test(norm) && norm.length >= 3 && norm.length <= 10;
+    });
+
+    if (validas.length > 0) {
+      palabrasDisponibles = [...palabrasDisponibles, ...validas];
+      iniciarRonda();
+      aviso(`¡${validas.length} palabras nuevas añadidas con IA!`, 'exito');
+    } else {
+      aviso('No se encontraron términos válidos con la longitud adecuada.', 'alerta');
+    }
+  } catch (err) {
+    aviso(err.message || 'Error al conectar con la IA.', 'error');
+  } finally {
+    if (btnIa) {
+      btnIa.disabled = false;
+      btnIa.innerHTML = txtOrig || '✨ Generar con IA';
+    }
   }
 }
 

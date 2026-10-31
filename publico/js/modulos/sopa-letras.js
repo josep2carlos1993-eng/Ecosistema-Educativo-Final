@@ -60,6 +60,7 @@ const DIFICULTADES = {
 };
 
 let temaActual = null;
+let mapaPalabras = new Map();
 let candidatosTema = [];
 let dificultadActual = 'facil';
 let sopaActual = null; // { grilla, ubicaciones }
@@ -178,7 +179,7 @@ async function iniciarActividad() {
     // Obtener términos del glosario
     const glosario = await api.listar('glosario', { temaId: temaActual.id });
 
-    const mapaPalabras = new Map();
+    mapaPalabras = new Map();
 
     (glosario || []).forEach(item => {
       if (!item || !item.termino) return;
@@ -267,6 +268,9 @@ function renderizarTablero() {
             </p>
           </div>
           <div class="sopa-acciones-encabezado">
+            <button type="button" class="btn btn--acento btn--pequeno" id="btn-ia-palabras" title="Generar nuevas palabras del tema con Inteligencia Artificial">
+              ✨ Generar con IA
+            </button>
             <button type="button" class="btn btn--peligro btn--pequeno" id="btn-rendirse">
               🏳️ Rendirse
             </button>
@@ -357,6 +361,11 @@ function conectarEventos() {
   const btnRendirse = document.getElementById('btn-rendirse');
   if (btnRendirse) {
     btnRendirse.addEventListener('click', manejarRendirse);
+  }
+
+  const btnIa = document.getElementById('btn-ia-palabras');
+  if (btnIa) {
+    btnIa.addEventListener('click', manejarGenerarPalabrasIA);
   }
 
   const botonesDif = document.querySelectorAll('.sopa-dificultad__btn');
@@ -620,6 +629,73 @@ async function finalizarPartida(rendido = false) {
     iniciarPartida();
   } else {
     window.location.href = `/paginas/tema.html?id=${temaActual.id}`;
+  }
+}
+
+async function manejarGenerarPalabrasIA() {
+  const btnIa = document.getElementById('btn-ia-palabras');
+  if (!temaActual) return;
+
+  const textoOriginal = btnIa ? btnIa.innerHTML : '';
+  if (btnIa) {
+    btnIa.disabled = true;
+    btnIa.innerHTML = '⏳ Generando con IA...';
+  }
+
+  try {
+    const resp = await api.crear('ia/generar-glosario', {
+      temaId: temaActual.id,
+      cantidad: 8
+    });
+
+    const nuevos = (resp && Array.isArray(resp.guardados) && resp.guardados.length > 0)
+      ? resp.guardados
+      : (resp?.generados || resp?.palabras || []);
+
+    if (!nuevos || nuevos.length === 0) {
+      mostrarRetro({
+        correcto: false,
+        mensaje: 'No se generaron palabras nuevas en este momento. Inténtalo de nuevo.'
+      });
+      return;
+    }
+
+    let agregadas = 0;
+    nuevos.forEach(item => {
+      if (!item) return;
+      const termino = item.termino || item.palabra || '';
+      const partes = termino.trim().split(/\s+/);
+      if (partes.length === 1) {
+        const norm = normalizar(partes[0]);
+        if (norm.length >= 3) {
+          mapaPalabras.set(norm, {
+            termino: norm,
+            definicion: item.definicion || item.retroalimentacion || `Concepto clave sobre ${temaActual.titulo}.`,
+            original: item
+          });
+          agregadas++;
+        }
+      }
+    });
+
+    candidatosTema = Array.from(mapaPalabras.values());
+    iniciarPartida();
+
+    mostrarRetro({
+      correcto: true,
+      mensaje: `¡Se generaron ${agregadas} nuevas palabras pedagógicas con IA! La sopa de letras ha sido actualizada.`
+    });
+  } catch (error) {
+    mostrarRetro({
+      correcto: false,
+      mensaje: error.message || 'No se pudo conectar con el modelo de IA. Inténtalo más tarde.'
+    });
+  } finally {
+    const btnActual = document.getElementById('btn-ia-palabras');
+    if (btnActual) {
+      btnActual.disabled = false;
+      btnActual.innerHTML = textoOriginal || '✨ Generar con IA';
+    }
   }
 }
 

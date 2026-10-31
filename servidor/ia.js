@@ -79,6 +79,21 @@ function generarRespuestaTutorSimulada(datos) {
 }
 
 /**
+ * Genera palabras de glosario didácticas si no hay IA disponible.
+ */
+function generarGlosarioSimulado(datos) {
+  const tema = datos.tema || 'el tema';
+  return [
+    { termino: 'cultura', definicion: `Saberes, valores y tradiciones esenciales analizados en ${tema}.`, pista: 'Manifestaciones humanas compartidas', retroalimentacion: `Concepto central al estudiar ${tema}.` },
+    { termino: 'region', definicion: `Espacio geográfico con características y dinámicas de ${tema}.`, pista: 'Área geográfica determinada', retroalimentacion: `Define las particularidades de ${tema}.` },
+    { termino: 'recurso', definicion: `Elementos naturales y materiales aprovechados en ${tema}.`, pista: 'Bienes o medios disponibles', retroalimentacion: `Sustento del desarrollo en ${tema}.` },
+    { termino: 'origen', definicion: `Punto de partida y evolución histórica vinculada a ${tema}.`, pista: 'Comienzo o procedencia inicial', retroalimentacion: `Esencial para comprender la raíz de ${tema}.` },
+    { termino: 'aporte', definicion: `Contribución formativa y progreso alcanzado en ${tema}.`, pista: 'Contribución o valor añadido', retroalimentacion: `Aporte esencial para el análisis formativo.` },
+    { termino: 'pueblo', definicion: `Comunidad humana protagonista de los procesos en ${tema}.`, pista: 'Grupo social organizado', retroalimentacion: `Actores centrales en ${tema}.` }
+  ];
+}
+
+/**
  * Extrae y parsea JSON de una respuesta de texto de IA.
  */
 function extraerJSON(texto) {
@@ -362,6 +377,8 @@ export async function ejecutarTarea(tarea, datos, usuario, { formato = 'json' } 
         resultado = generarPreguntasSimuladas(datos);
       } else if (tarea === 'tutor') {
         resultado = generarRespuestaTutorSimulada(datos);
+      } else if (tarea === 'generar-glosario') {
+        resultado = generarGlosarioSimulado(datos);
       } else {
         throw apiErr;
       }
@@ -372,6 +389,8 @@ export async function ejecutarTarea(tarea, datos, usuario, { formato = 'json' } 
       resultado = generarPreguntasSimuladas(datos);
     } else if (tarea === 'tutor') {
       resultado = generarRespuestaTutorSimulada(datos);
+    } else if (tarea === 'generar-glosario') {
+      resultado = generarGlosarioSimulado(datos);
     } else {
       resultado = [];
     }

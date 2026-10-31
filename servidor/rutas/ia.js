@@ -172,6 +172,46 @@ router.post('/ia/:tarea', async (req, res) => {
       }
     }
 
+    if (tarea === 'generar-glosario') {
+      const listaTerminos = Array.isArray(resultado)
+        ? resultado
+        : (Array.isArray(resultado?.terminos) ? resultado.terminos : (Array.isArray(resultado?.palabras) ? resultado.palabras : []));
+
+      const temaId = req.body?.temaId || datos?.temaId;
+      const guardados = [];
+
+      if (temaId && listaTerminos.length > 0) {
+        try {
+          const existentes = await almacen.leer('glosario');
+          for (const item of listaTerminos) {
+            if (!item || !item.termino) continue;
+            const termLimpio = String(item.termino).trim();
+            const norm = termLimpio.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase();
+            if (!/^[A-ZÑ]+$/.test(norm) || norm.length < 3) continue;
+
+            const yaExiste = existentes.some(e => e && e.temaId === temaId && String(e.termino).toLowerCase() === termLimpio.toLowerCase());
+            if (!yaExiste) {
+              const nuevo = await almacen.agregar('glosario', {
+                temaId,
+                termino: termLimpio,
+                definicion: String(item.definicion || `Concepto pedagógico clave sobre ${termLimpio}`).trim(),
+                pista: String(item.pista || `Relacionado con ${termLimpio}`).trim(),
+                retroalimentacion: String(item.retroalimentacion || `Término didáctico formativo: ${termLimpio}`).trim(),
+                origen: 'ia',
+                estado: 'aprobado'
+              });
+              existentes.push(nuevo);
+              guardados.push(nuevo);
+            }
+          }
+        } catch (errGuardar) {
+          console.warn('Error al guardar nuevos términos en glosario:', errGuardar.message);
+        }
+      }
+
+      return res.json({ ok: true, generados: listaTerminos, guardados });
+    }
+
     return res.json(resultado);
   } catch (error) {
     const estado = error.estado || (error.message?.includes('permisos') ? 403 : 500);
