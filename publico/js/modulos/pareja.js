@@ -141,9 +141,14 @@ function renderizarTablero() {
               Voltea dos tarjetas para relacionar cada concepto con su definición correcta.
             </p>
           </div>
-          <button type="button" class="btn btn--secundario btn--pequeno" id="btn-reiniciar">
-            🔄 Reiniciar
-          </button>
+          <div style="display: flex; gap: var(--espacio-s); align-items: center; flex-wrap: wrap;">
+            <button type="button" class="btn btn--acento btn--pequeno" id="btn-ia-pareja" title="Generar nuevas parejas de conceptos y definiciones con Inteligencia Artificial">
+              ✨ Generar con IA
+            </button>
+            <button type="button" class="btn btn--secundario btn--pequeno" id="btn-reiniciar">
+              🔄 Reiniciar
+            </button>
+          </div>
         </div>
 
         <div class="pareja-panel">
@@ -214,6 +219,11 @@ function conectarEventos() {
     btnReiniciar.addEventListener('click', () => {
       iniciarPartida();
     });
+  }
+
+  const btnIa = document.getElementById('btn-ia-pareja');
+  if (btnIa) {
+    btnIa.addEventListener('click', manejarGenerarParejasIA);
   }
 
   const botonesDif = document.querySelectorAll('.pareja-dificultad__btn');
@@ -388,6 +398,70 @@ async function finalizarPartida() {
     iniciarPartida();
   } else {
     window.location.href = `/paginas/tema.html?id=${temaActual.id}`;
+  }
+}
+
+async function manejarGenerarParejasIA() {
+  const btnIa = document.getElementById('btn-ia-pareja');
+  if (!temaActual) return;
+
+  const textoOriginal = btnIa ? btnIa.innerHTML : '';
+  if (btnIa) {
+    btnIa.disabled = true;
+    btnIa.innerHTML = '⏳ Generando con IA...';
+  }
+
+  try {
+    const resp = await api.crear('ia/generar-glosario', {
+      temaId: temaActual.id,
+      cantidad: 10
+    });
+
+    const nuevos = (resp && Array.isArray(resp.guardados) && resp.guardados.length > 0)
+      ? resp.guardados
+      : (resp?.generados || resp?.palabras || []);
+
+    if (!nuevos || nuevos.length === 0) {
+      mostrarRetro({
+        correcto: false,
+        mensaje: 'No se generaron parejas nuevas en este momento. Inténtalo de nuevo.'
+      });
+      return;
+    }
+
+    let agregadas = 0;
+    nuevos.forEach(item => {
+      if (!item || !item.termino || !item.definicion) return;
+      const existe = glosarioTerminos.some(t => t && t.termino.toLowerCase() === item.termino.trim().toLowerCase());
+      if (!existe) {
+        glosarioTerminos.push({
+          id: item.id || `glo_ia_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
+          termino: item.termino.trim(),
+          definicion: item.definicion.trim(),
+          retroalimentacion: item.retroalimentacion || `Concepto pedagógico clave sobre ${item.termino}.`
+        });
+        agregadas++;
+      }
+    });
+
+    // Iniciar nueva ronda con las nuevas tarjetas barajadas
+    iniciarPartida();
+
+    mostrarRetro({
+      correcto: true,
+      mensaje: `¡Se incorporaron ${agregadas > 0 ? agregadas : 'nuevas'} parejas de conceptos y definiciones generadas con IA!`
+    });
+  } catch (error) {
+    mostrarRetro({
+      correcto: false,
+      mensaje: error.message || 'No se pudo conectar con el modelo de IA. Inténtalo más tarde.'
+    });
+  } finally {
+    const btnActual = document.getElementById('btn-ia-pareja');
+    if (btnActual) {
+      btnActual.disabled = false;
+      btnActual.innerHTML = textoOriginal || '✨ Generar con IA';
+    }
   }
 }
 
