@@ -15,6 +15,7 @@ if (!contenido) {
 }
 
 let temaActual = null;
+let todosLosPares = [];
 let paresCompletos = [];
 let terminoSeleccionado = null;
 let definicionSeleccionada = null;
@@ -31,9 +32,9 @@ async function iniciarActividad() {
     const glosario = await api.listar('glosario', { temaId: temaActual.id });
 
     if (glosario && glosario.length > 0) {
-      paresCompletos = glosario.slice(0, MAX_PARES_POR_RONDA);
+      todosLosPares = [...glosario];
     } else {
-      paresCompletos = [
+      todosLosPares = [
         {
           id: 'p1',
           termino: temaActual.titulo,
@@ -43,7 +44,7 @@ async function iniciarActividad() {
       ];
       if (temaActual.ejemplos && temaActual.ejemplos.length > 0) {
         temaActual.ejemplos.forEach((ej, idx) => {
-          paresCompletos.push({
+          todosLosPares.push({
             id: `p_ej_${idx}`,
             termino: `Ejemplo histórico ${idx + 1}`,
             definicion: ej,
@@ -52,6 +53,8 @@ async function iniciarActividad() {
         });
       }
     }
+
+    paresCompletos = barajar([...todosLosPares]).slice(0, MAX_PARES_POR_RONDA);
 
     reiniciarEstado();
     renderizarTablero();
@@ -96,13 +99,18 @@ function renderizarTablero() {
           </p>
         </div>
 
-        <div style="display: flex; align-items: center; gap: var(--espacio-m);">
-          <span class="badge" style="background-color: var(--color-exito-fondo); color: var(--color-exito); font-weight: var(--peso-seminegrita);" id="marcador-pares">
-            ✅ 0 / ${paresCompletos.length}
-          </span>
-          <span class="badge" style="background-color: var(--color-error-fondo); color: var(--color-error); font-weight: var(--peso-seminegrita);" id="marcador-fallos">
-            ❌ 0 fallos
-          </span>
+        <div style="display: flex; align-items: center; gap: var(--espacio-m); flex-wrap: wrap;">
+          <button type="button" class="btn btn--acento btn--pequeno" id="btn-ia-emparejar" title="Generar nuevos pares de conceptos y definiciones con Inteligencia Artificial">
+            ✨ Generar con IA
+          </button>
+          <div style="display: flex; align-items: center; gap: var(--espacio-m);">
+            <span class="badge" style="background-color: var(--color-exito-fondo); color: var(--color-exito); font-weight: var(--peso-seminegrita);" id="marcador-pares">
+              ✅ 0 / ${paresCompletos.length}
+            </span>
+            <span class="badge" style="background-color: var(--color-error-fondo); color: var(--color-error); font-weight: var(--peso-seminegrita);" id="marcador-fallos">
+              ❌ 0 fallos
+            </span>
+          </div>
         </div>
       </div>
 
@@ -136,6 +144,11 @@ function renderizarTablero() {
 }
 
 function conectarEventos() {
+  const btnIa = document.getElementById('btn-ia-emparejar');
+  if (btnIa) {
+    btnIa.addEventListener('click', manejarGenerarEmparejarIA);
+  }
+
   const botonesTermino = document.querySelectorAll('.btn-termino');
   const botonesDefinicion = document.querySelectorAll('.btn-definicion');
 
@@ -268,6 +281,71 @@ async function finalizarActividad() {
     renderizarTablero();
   } else {
     window.location.href = `/paginas/tema.html?id=${temaActual.id}`;
+  }
+}
+
+async function manejarGenerarEmparejarIA() {
+  const btnIa = document.getElementById('btn-ia-emparejar');
+  if (!temaActual) return;
+
+  const textoOriginal = btnIa ? btnIa.innerHTML : '';
+  if (btnIa) {
+    btnIa.disabled = true;
+    btnIa.innerHTML = '⏳ Generando con IA...';
+  }
+
+  try {
+    const resp = await api.crear('ia/generar-glosario', {
+      temaId: temaActual.id,
+      cantidad: 8
+    });
+
+    const nuevos = (resp && Array.isArray(resp.guardados) && resp.guardados.length > 0)
+      ? resp.guardados
+      : (resp?.generados || resp?.palabras || []);
+
+    if (!nuevos || nuevos.length === 0) {
+      mostrarRetro({
+        correcto: false,
+        mensaje: 'No se generaron parejas nuevas en este momento. Inténtalo de nuevo.'
+      });
+      return;
+    }
+
+    let agregadas = 0;
+    nuevos.forEach(item => {
+      if (!item || !item.termino || !item.definicion) return;
+      const existe = todosLosPares.some(p => p && p.termino && p.termino.toLowerCase() === item.termino.trim().toLowerCase());
+      if (!existe) {
+        todosLosPares.push({
+          id: item.id || `glo_ia_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
+          termino: item.termino.trim(),
+          definicion: item.definicion.trim(),
+          retroalimentacion: item.retroalimentacion || `Concepto pedagógico clave sobre ${item.termino}.`
+        });
+        agregadas++;
+      }
+    });
+
+    paresCompletos = barajar([...todosLosPares]).slice(0, MAX_PARES_POR_RONDA);
+    reiniciarEstado();
+    renderizarTablero();
+
+    mostrarRetro({
+      correcto: true,
+      mensaje: `¡Se incorporaron ${agregadas > 0 ? agregadas : 'nuevas'} parejas de conceptos y definiciones generadas con IA!`
+    });
+  } catch (error) {
+    mostrarRetro({
+      correcto: false,
+      mensaje: error.message || 'No se pudo conectar con el modelo de IA. Inténtalo más tarde.'
+    });
+  } finally {
+    const btnActual = document.getElementById('btn-ia-emparejar');
+    if (btnActual) {
+      btnActual.disabled = false;
+      btnActual.innerHTML = textoOriginal || '✨ Generar con IA';
+    }
   }
 }
 
