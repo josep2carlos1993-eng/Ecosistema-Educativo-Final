@@ -96,16 +96,21 @@ function renderizarEstructura() {
           </p>
         </div>
 
-        <div class="flashcards-marcador">
-          <span class="flashcards-marcador__badge flashcards-marcador__badge--aciertos" id="marcador-aciertos">
-            ✅ 0
-          </span>
-          <span class="flashcards-marcador__badge flashcards-marcador__badge--errores" id="marcador-errores">
-            ❌ 0
-          </span>
-          <span style="font-weight: var(--peso-seminegrita);" id="indicador-contador">
-            1 / ${tarjetas.length}
-          </span>
+        <div style="display: flex; gap: var(--espacio-m); align-items: center; flex-wrap: wrap;">
+          <button type="button" class="btn btn--acento btn--pequeno" id="btn-ia-flashcards" title="Generar nuevas tarjetas de memoria con Inteligencia Artificial">
+            ✨ Generar con IA
+          </button>
+          <div class="flashcards-marcador">
+            <span class="flashcards-marcador__badge flashcards-marcador__badge--aciertos" id="marcador-aciertos">
+              ✅ 0
+            </span>
+            <span class="flashcards-marcador__badge flashcards-marcador__badge--errores" id="marcador-errores">
+              ❌ 0
+            </span>
+            <span style="font-weight: var(--peso-seminegrita);" id="indicador-contador">
+              1 / ${tarjetas.length}
+            </span>
+          </div>
         </div>
       </div>
 
@@ -188,6 +193,11 @@ function conectarEventos() {
 
   btnSiSe.addEventListener('click', () => registrarRespuesta(true));
   btnNoSe.addEventListener('click', () => registrarRespuesta(false));
+
+  const btnIa = document.getElementById('btn-ia-flashcards');
+  if (btnIa) {
+    btnIa.addEventListener('click', manejarGenerarFlashcardsIA);
+  }
 }
 
 function mostrarTarjetaActual() {
@@ -306,6 +316,73 @@ async function finalizarActividad() {
     mostrarTarjetaActual();
   } else {
     window.location.href = `/paginas/tema.html?id=${temaActual.id}`;
+  }
+}
+
+async function manejarGenerarFlashcardsIA() {
+  const btnIa = document.getElementById('btn-ia-flashcards');
+  if (!temaActual) return;
+
+  const textoOriginal = btnIa ? btnIa.innerHTML : '';
+  if (btnIa) {
+    btnIa.disabled = true;
+    btnIa.innerHTML = '⏳ Generando con IA...';
+  }
+
+  try {
+    const resp = await api.crear('ia/generar-glosario', {
+      temaId: temaActual.id,
+      cantidad: 10
+    });
+
+    const nuevos = (resp && Array.isArray(resp.guardados) && resp.guardados.length > 0)
+      ? resp.guardados
+      : (resp?.generados || resp?.palabras || []);
+
+    if (!nuevos || nuevos.length === 0) {
+      mostrarRetro({
+        correcto: false,
+        mensaje: 'No se generaron tarjetas nuevas en este momento. Inténtalo de nuevo.'
+      });
+      return;
+    }
+
+    let agregadas = 0;
+    nuevos.forEach(item => {
+      if (!item || !item.termino) return;
+      const existe = tarjetas.some(t => t && t.termino && t.termino.toLowerCase() === item.termino.trim().toLowerCase());
+      if (!existe) {
+        tarjetas.push({
+          id: item.id || `glo_ia_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
+          termino: item.termino.trim(),
+          definicion: item.definicion ? item.definicion.trim() : 'Definición conceptual.',
+          pista: item.pista ? item.pista.trim() : 'Pista temática',
+          retroalimentacion: item.retroalimentacion || `Término formativo sobre ${item.termino}.`
+        });
+        agregadas++;
+      }
+    });
+
+    tarjetas = barajar([...tarjetas]);
+    reiniciarEstado();
+    renderizarEstructura();
+    mostrarTarjetaActual();
+
+    mostrarRetro({
+      correcto: true,
+      mensaje: `¡Se incorporaron ${agregadas > 0 ? agregadas : 'nuevas'} tarjetas de memoria generadas con IA!`
+    });
+  } catch (error) {
+    mostrarRetro({
+      correcto: false,
+      mensaje: error.message || 'No se pudo conectar con el modelo de IA. Inténtalo más tarde.'
+    });
+  } finally {
+    const btnActual = document.getElementById('btn-ia-flashcards');
+    if (btnActual) {
+      btnActual.disabled = false;
+      btnActual.innerHTML = textoOriginal || '✨ Generar con IA';
+    }
   }
 }
 
