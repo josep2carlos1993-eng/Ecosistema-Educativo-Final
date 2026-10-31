@@ -1,0 +1,68 @@
+{
+  "puntos": {
+    "quiz": 100,
+    "flashcards": 30,
+    "crucigrama": 50,
+    "sopa-letras": 50,
+    "completar": 40,
+    "ordenar": 40,
+    "emparejar": 40,
+    "simulacion": 80,
+    "rol": 80,
+    "foro-hilo": 20,
+    "foro-respuesta": 10,
+    "cancion": 15,
+    "lectura": 10,
+    "tema-revisado": 10,
+    "ahorcado": 40,
+    "pareja": 40
+  },
+  "bonoSinErrores": 20,
+  "unicas": {
+    "lectura": ["temaId"],
+    "cancion": ["temaId"],
+    "tema-revisado": ["temaId"],
+    "foro-hilo": ["detalle.hiloId"],
+    "foro-respuesta": ["detalle.respuestaId"]
+  },
+  "requiereAprobado": [
+    "quiz",
+    "simulacion"
+  ],
+  "maxDiario": {
+    "quiz": 5,
+    "flashcards": 10,
+    "crucigrama": 5,
+    "sopa-letras": 5,
+    "completar": 5,
+    "ordenar": 5,
+    "emparejar": 5,
+    "simulacion": 3,
+    "rol": 3,
+    "foro-hilo": 3,
+    "foro-respuesta": 5,
+    "cancion": 5,
+    "lectura": 10,
+    "tema-revisado": 10,
+    "ahorcado": 5,
+    "pareja": 5
+  },
+  "limiteIntentosHora": 30,
+  "quiz": {
+    "aprobadoMinimo": 70,
+    "preguntasPorNivel": 5,
+    "nivelMaximo": 5
+  },
+  "certificado": {
+    "nivelQuizRequerido": 3,
+    "temasConNivelRequerido": 1,
+    "puntosMinimos": 100,
+    "temasRevisadosPct": 80,
+    "cumplimiento": {
+      "porcentajeTemas": 100
+    },
+    "nivel-quiz": {
+      "nivelMinimo": 3
+    }
+  }
+}

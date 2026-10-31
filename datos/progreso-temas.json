@@ -1,0 +1,32 @@
+[
+  {
+    "temaId": "tem_000001",
+    "usuarioId": "usu_est001",
+    "id": "pro_000001",
+    "fecha": "2026-10-25T03:49:43.904Z"
+  },
+  {
+    "temaId": "tem_000001",
+    "usuarioId": "usu_000004",
+    "id": "pro_000002",
+    "fecha": "2026-10-30T04:14:41.905Z"
+  },
+  {
+    "temaId": "tem_000002",
+    "usuarioId": "usu_000004",
+    "id": "pro_000003",
+    "fecha": "2026-10-30T04:15:04.450Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "usuarioId": "usu_000004",
+    "id": "pro_000004",
+    "fecha": "2026-10-30T04:15:16.741Z"
+  },
+  {
+    "temaId": "tem_000004",
+    "usuarioId": "usu_000004",
+    "id": "pro_000005",
+    "fecha": "2026-10-30T04:15:39.393Z"
+  }
+]

@@ -1,0 +1,39 @@
+/* publico/css/modulos/ingreso.css · Estilos de la página de ingreso */
+
+.ingreso-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  padding: var(--espacio-l) var(--espacio-s);
+}
+
+.ingreso-tarjeta {
+  width: 100%;
+  max-width: 440px;
+  padding: var(--espacio-xl);
+  box-shadow: var(--sombra-2);
+}
+
+.ingreso-encabezado {
+  text-align: center;
+  margin-bottom: var(--espacio-m);
+}
+
+.ingreso-encabezado h1 {
+  font-size: var(--texto-2xl);
+  color: var(--color-primario);
+  margin-bottom: var(--espacio-xs);
+}
+
+.ingreso-encabezado p {
+  color: var(--color-texto-suave);
+  font-size: var(--texto-s);
+}
+
+.ingreso-pie {
+  text-align: center;
+  margin-top: var(--espacio-l);
+  font-size: var(--texto-s);
+  color: var(--color-texto-suave);
+}

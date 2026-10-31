@@ -1,0 +1,116 @@
+/* publico/css/modulos/emparejar.css · Estilos de la actividad de Emparejar Conceptos */
+
+.emparejar-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.emparejar-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+}
+
+.emparejar-tablero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--espacio-l);
+  align-items: stretch;
+}
+
+.emparejar-columna {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+.emparejar-columna__titulo {
+  font-size: var(--texto-m);
+  color: var(--color-texto-suave);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: var(--peso-seminegrita);
+  margin-bottom: var(--espacio-xs);
+  text-align: center;
+}
+
+/* Tarjetas de emparejamiento */
+.emparejar-tarjeta {
+  background-color: var(--color-superficie);
+  border: 2px solid var(--color-borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-m) var(--espacio-l);
+  cursor: pointer;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: var(--sombra-1);
+  transition: all var(--transicion);
+  user-select: none;
+  font-family: var(--fuente-base);
+  font-size: var(--texto-m);
+  color: var(--color-texto);
+  line-height: var(--interlineado-base);
+  width: 100%;
+}
+
+.emparejar-tarjeta:hover {
+  border-color: var(--color-primario);
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-2);
+}
+
+.emparejar-tarjeta:focus-visible {
+  outline: var(--ancho-borde-foco) solid var(--color-primario);
+  outline-offset: var(--desplazamiento-foco);
+}
+
+.emparejar-tarjeta--termino {
+  font-weight: var(--peso-negrita);
+  font-size: var(--texto-l);
+  color: var(--color-primario);
+  text-transform: capitalize;
+}
+
+.emparejar-tarjeta--seleccionada {
+  border-color: var(--color-acento);
+  background-color: var(--color-advertencia-fondo);
+  transform: scale(1.02);
+  box-shadow: var(--sombra-2);
+}
+
+.emparejar-tarjeta--emparejada {
+  border-color: var(--color-exito);
+  background-color: var(--color-exito-fondo);
+  color: var(--color-exito);
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+.emparejar-tarjeta--error {
+  border-color: var(--color-error);
+  background-color: var(--color-error-fondo);
+  animation: sacudir 0.4s ease-in-out;
+}
+
+@keyframes sacudir {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-4px); }
+}
+
+@media (max-width: 640px) {
+  .emparejar-tablero {
+    grid-template-columns: 1fr;
+    gap: var(--espacio-m);
+  }
+}

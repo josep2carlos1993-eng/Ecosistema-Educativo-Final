@@ -1,0 +1,148 @@
+/* publico/css/modulos/canciones.css · Estilos para el catálogo de canciones educativas */
+
+.canciones-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+  margin-bottom: var(--espacio-l);
+}
+
+.canciones-cabecera__textos {
+  flex: 1 1 280px;
+}
+
+.canciones-cabecera__titulo {
+  font-size: var(--texto-2xl);
+  color: var(--color-primario);
+  margin: 0;
+}
+
+.canciones-cabecera__bajada {
+  color: var(--color-texto-suave);
+  margin-top: var(--espacio-xs);
+  margin-bottom: 0;
+  font-size: var(--texto-base);
+}
+
+.canciones-filtros {
+  display: flex;
+  gap: var(--espacio-m);
+  flex-wrap: wrap;
+  align-items: flex-end;
+  background-color: var(--color-superficie);
+  padding: var(--espacio-m);
+  border-radius: var(--radio-m);
+  border: 1px solid var(--color-borde);
+  margin-bottom: var(--espacio-l);
+}
+
+.canciones-filtros .campo {
+  flex: 1 1 200px;
+  margin-bottom: 0;
+}
+
+.canciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--espacio-l);
+}
+
+.tarjeta-cancion {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-l);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+  box-shadow: var(--sombra-sm);
+  transition: transform var(--transicion), box-shadow var(--transicion);
+}
+
+.tarjeta-cancion:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-md);
+}
+
+.tarjeta-cancion__arriba {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--espacio-s);
+}
+
+.tarjeta-cancion__icono {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radio-m);
+  background-color: var(--color-fondo-alt);
+  color: var(--color-primario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--texto-xl);
+  flex-shrink: 0;
+}
+
+.tarjeta-cancion__meta {
+  flex: 1;
+}
+
+.tarjeta-cancion__titulo {
+  margin: 0;
+  font-size: var(--texto-lg);
+  color: var(--color-primario);
+}
+
+.tarjeta-cancion__titulo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.tarjeta-cancion__titulo a:hover {
+  text-decoration: underline;
+}
+
+.tarjeta-cancion__autoria {
+  font-size: var(--texto-xs);
+  color: var(--color-texto-suave);
+  margin-top: var(--espacio-xs);
+}
+
+.tarjeta-cancion__tema {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espacio-xs);
+  font-size: var(--texto-xs);
+  background-color: var(--color-fondo);
+  padding: var(--espacio-xs) var(--espacio-s);
+  border-radius: var(--radio-s);
+  border: 1px solid var(--color-borde);
+  color: var(--color-texto);
+}
+
+.tarjeta-cancion__audio {
+  width: 100%;
+  border-radius: var(--radio-s);
+  height: 38px;
+}
+
+.tarjeta-cancion__acciones {
+  display: flex;
+  gap: var(--espacio-s);
+  align-items: center;
+  margin-top: auto;
+  padding-top: var(--espacio-s);
+  border-top: 1px solid var(--color-borde);
+}
+
+.canciones-vacio {
+  text-align: center;
+  padding: var(--espacio-2xl) var(--espacio-l);
+  background-color: var(--color-superficie);
+  border-radius: var(--radio-l);
+  border: 1px dashed var(--color-borde);
+  color: var(--color-texto-suave);
+}

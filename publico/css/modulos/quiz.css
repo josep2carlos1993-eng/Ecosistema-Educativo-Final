@@ -1,0 +1,273 @@
+/* publico/css/modulos/quiz.css */
+
+.quiz-contenedor {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: var(--espacio-m) 0;
+}
+
+.quiz-cabecera {
+  margin-bottom: var(--espacio-l);
+  text-align: center;
+}
+
+.quiz-tema-badge {
+  display: inline-block;
+  background-color: var(--color-primario-fondo, rgba(0, 114, 206, 0.1));
+  color: var(--color-primario);
+  padding: var(--espacio-xs) var(--espacio-m);
+  border-radius: var(--radio-total);
+  font-size: var(--texto-s);
+  font-weight: var(--peso-seminegrita);
+  margin-bottom: var(--espacio-xs);
+}
+
+/* Grilla de niveles */
+.quiz-niveles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--espacio-m);
+  margin-top: var(--espacio-m);
+}
+
+.tarjeta-nivel {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  padding: var(--espacio-m);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--espacio-m);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--sombra-sm);
+  position: relative;
+}
+
+.tarjeta-nivel--bloqueado {
+  opacity: 0.65;
+  background-color: var(--color-fondo);
+  border-style: dashed;
+}
+
+.tarjeta-nivel--disponible {
+  border-color: var(--color-primario);
+}
+
+.tarjeta-nivel--aprobado {
+  border-color: var(--color-exito, #137333);
+  background: linear-gradient(to bottom, var(--color-superficie), var(--color-exito-fondo, #e6f4ea));
+}
+
+.tarjeta-nivel__icono {
+  font-size: var(--texto-2xl);
+  line-height: 1;
+}
+
+.tarjeta-nivel__titulo {
+  font-size: var(--texto-l);
+  font-weight: var(--peso-negrita);
+  margin: var(--espacio-xs) 0 2px 0;
+  color: var(--color-texto);
+}
+
+.tarjeta-nivel__bloom {
+  font-size: var(--texto-xs);
+  color: var(--color-texto-suave);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tarjeta-nivel__porcentaje {
+  font-size: var(--texto-s);
+  color: var(--color-texto-suave);
+  margin-top: var(--espacio-xs);
+}
+
+.tarjeta-nivel__acciones {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-xs);
+  margin-top: auto;
+}
+
+/* Interfaz de Pregunta Activa */
+.quiz-activo {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  padding: var(--espacio-l);
+  box-shadow: var(--sombra-m);
+}
+
+.quiz-progreso-barra {
+  width: 100%;
+  height: 8px;
+  background-color: var(--color-fondo);
+  border-radius: var(--radio-total);
+  overflow: hidden;
+  margin-bottom: var(--espacio-m);
+}
+
+.quiz-progreso-relleno {
+  height: 100%;
+  background-color: var(--color-primario);
+  transition: width 0.3s ease;
+}
+
+.quiz-pregunta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--espacio-m);
+}
+
+.quiz-pregunta-contador {
+  font-size: var(--texto-s);
+  color: var(--color-texto-suave);
+  font-weight: var(--peso-seminegrita);
+}
+
+.quiz-enunciado {
+  font-size: var(--texto-xl);
+  font-weight: var(--peso-seminegrita);
+  color: var(--color-texto);
+  line-height: 1.4;
+  margin-bottom: var(--espacio-l);
+}
+
+/* Opciones de Opción Múltiple (Radio grandes) */
+.quiz-opciones-radio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+  margin-bottom: var(--espacio-l);
+}
+
+.quiz-opcion-item {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-m);
+  padding: var(--espacio-m);
+  border: 2px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  background-color: var(--color-superficie);
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  font-size: var(--texto-m);
+  color: var(--color-texto);
+}
+
+.quiz-opcion-item:hover {
+  background-color: var(--color-fondo);
+  border-color: var(--color-primario);
+}
+
+.quiz-opcion-item input[type="radio"] {
+  width: 22px;
+  height: 22px;
+  accent-color: var(--color-primario);
+  cursor: pointer;
+}
+
+.quiz-opcion-item--seleccionado {
+  border-color: var(--color-primario);
+  background-color: var(--color-primario-fondo, rgba(0, 114, 206, 0.08));
+}
+
+/* Opciones de Verdadero / Falso (2 botones grandes) */
+.quiz-vf-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--espacio-m);
+  margin-bottom: var(--espacio-l);
+}
+
+.quiz-boton-vf {
+  padding: var(--espacio-l) var(--espacio-m);
+  font-size: var(--texto-l);
+  font-weight: var(--peso-negrita);
+  border: 2px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  background-color: var(--color-superficie);
+  color: var(--color-texto);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.quiz-boton-vf:hover {
+  border-color: var(--color-primario);
+  background-color: var(--color-fondo);
+}
+
+.quiz-boton-vf--activo {
+  border-color: var(--color-primario);
+  background-color: var(--color-primario);
+  color: var(--color-superficie);
+}
+
+/* Campo Completar */
+.quiz-completar-wrapper {
+  margin-bottom: var(--espacio-l);
+}
+
+.quiz-completar-input {
+  width: 100%;
+  font-size: var(--texto-l);
+  padding: var(--espacio-m);
+  border: 2px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  transition: border-color 0.2s ease;
+}
+
+.quiz-completar-input:focus {
+  outline: none;
+  border-color: var(--color-primario);
+  background-color: var(--color-superficie);
+}
+
+/* Botones de acción */
+.quiz-acciones-barra {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--espacio-s);
+  margin-top: var(--espacio-l);
+  border-top: 1px solid var(--color-borde);
+  padding-top: var(--espacio-m);
+}
+
+/* Contenedor de retroalimentación en línea */
+.quiz-retro-slot {
+  margin-top: var(--espacio-m);
+}
+
+/* Pantalla final de nivel */
+.quiz-resultado-card {
+  text-align: center;
+  padding: var(--espacio-xl) var(--espacio-m);
+}
+
+.quiz-resultado-icono {
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-bottom: var(--espacio-m);
+}
+
+.quiz-resultado-porcentaje {
+  font-size: var(--texto-3xl);
+  font-weight: var(--peso-negrita);
+  color: var(--color-primario);
+  margin-bottom: var(--espacio-s);
+}
+
+.quiz-resultado-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--espacio-s);
+  margin-top: var(--espacio-l);
+}
+

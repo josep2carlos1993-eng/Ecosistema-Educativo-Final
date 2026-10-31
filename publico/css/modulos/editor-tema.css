@@ -1,0 +1,141 @@
+/* publico/css/modulos/editor-tema.css · Estilos para la ficha del tema y glosario */
+
+.ficha-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--espacio-m);
+  flex-wrap: wrap;
+  padding: var(--espacio-m);
+  background-color: var(--color-superficie);
+  border-radius: var(--radio-m);
+  box-shadow: var(--sombra-1);
+  margin-bottom: var(--espacio-l);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.ficha-cabecera__izq {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-m);
+}
+
+.ficha-cabecera__acciones {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-s);
+}
+
+/* Listas editables (Objetivos, Ejemplos, etc.) */
+.lista-editable-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-xs);
+  margin-top: var(--espacio-xs);
+}
+
+.item-editable-fila {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-s);
+}
+
+.item-editable-fila input {
+  flex: 1;
+}
+
+/* Recursos */
+.recursos-lista-editable {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+  margin-top: var(--espacio-xs);
+}
+
+.recurso-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-xs);
+  padding: var(--espacio-s);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-s);
+  background-color: var(--color-fondo);
+}
+
+.recurso-fila-inputs {
+  display: flex;
+  gap: var(--espacio-s);
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Glosario */
+.glosario-panel-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--espacio-m);
+  flex-wrap: wrap;
+  padding: var(--espacio-m);
+  background-color: var(--color-fondo);
+  border-radius: var(--radio-m);
+  border: 1px solid var(--color-borde);
+}
+
+.glosario-metricas {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-s);
+  flex-wrap: wrap;
+}
+
+.glosario-tabla-wrapper {
+  overflow-x: auto;
+  border-radius: var(--radio-m);
+  box-shadow: var(--sombra-1);
+  background-color: var(--color-superficie);
+  margin-top: var(--espacio-s);
+}
+
+.glosario-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.glosario-tabla th {
+  background-color: var(--color-primario);
+  color: var(--color-texto-inverso);
+  padding: var(--espacio-s) var(--espacio-m);
+  font-size: var(--texto-s);
+  font-weight: var(--peso-seminegrita);
+}
+
+.glosario-tabla td {
+  padding: var(--espacio-s) var(--espacio-m);
+  border-bottom: 1px solid var(--color-borde);
+  font-size: var(--texto-s);
+  vertical-align: top;
+}
+
+.glosario-tabla tr:hover {
+  background-color: var(--color-fondo);
+}
+
+.contador-palabras {
+  font-size: var(--texto-xs);
+  color: var(--color-texto-suave);
+  text-align: right;
+  margin-top: var(--espacio-xs);
+}
+
+.contador-palabras.adecuado {
+  color: var(--color-exito);
+  font-weight: var(--peso-seminegrita);
+}
+
+.contador-palabras.fuera-rango {
+  color: var(--color-advertencia);
+}

@@ -1,0 +1,253 @@
+/* publico/css/modulos/banco-preguntas.css · Estilos para el Banco de Preguntas */
+
+.banco-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+  max-width: 1040px;
+  margin-inline: auto;
+  padding-block: var(--espacio-s);
+}
+
+.banco-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+}
+
+.banco-titulo {
+  margin: 0;
+  font-size: var(--texto-2xl);
+  font-weight: var(--peso-negrita);
+  color: var(--color-primario);
+}
+
+.banco-subtitulo {
+  margin: var(--espacio-xs) 0 0 0;
+  color: var(--color-texto-suave);
+  font-size: var(--texto-s);
+  line-height: var(--interlineado-base);
+}
+
+/* Selector de Tema */
+.banco-selector-tema {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-m);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+  box-shadow: var(--sombra-1);
+}
+
+.banco-selector-tema__label {
+  font-size: var(--texto-s);
+  font-weight: var(--peso-seminegrita);
+  color: var(--color-primario);
+  min-width: 120px;
+}
+
+.banco-selector-tema__select {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* Pestañas de niveles cognitivos (Bloom) */
+.banco-pestanas {
+  display: flex;
+  gap: var(--espacio-xs);
+  border-bottom: 2px solid var(--color-borde);
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.banco-pestana {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--espacio-xs);
+  padding: var(--espacio-s) var(--espacio-m);
+  font-family: var(--fuente-base);
+  font-size: var(--texto-s);
+  font-weight: var(--peso-seminegrita);
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--color-texto-suave);
+  cursor: pointer;
+  transition: all var(--transicion);
+  white-space: nowrap;
+}
+
+.banco-pestana:hover {
+  color: var(--color-primario);
+  background-color: var(--color-fondo);
+}
+
+.banco-pestana--activa {
+  color: var(--color-primario);
+  border-bottom-color: var(--color-acento);
+  font-weight: var(--peso-negrita);
+}
+
+.banco-pestana__conteo {
+  font-size: var(--texto-xs);
+  padding: 2px 8px;
+  border-radius: var(--radio-completo);
+  background-color: var(--color-fondo);
+  color: var(--color-texto-suave);
+}
+
+.banco-pestana--activa .banco-pestana__conteo {
+  background-color: var(--color-primario);
+  color: var(--color-texto-inverso);
+}
+
+/* Barra de herramientas */
+.banco-herramientas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+}
+
+.banco-acciones {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-s);
+}
+
+/* Lista de preguntas */
+.banco-lista-preguntas {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+.tarjeta-pregunta {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  padding: var(--espacio-m) var(--espacio-l);
+  box-shadow: var(--sombra-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+  transition: border-color var(--transicion);
+}
+
+.tarjeta-pregunta:hover {
+  border-color: var(--color-primario);
+}
+
+.tarjeta-pregunta__cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-xs);
+}
+
+.tarjeta-pregunta__etiquetas {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-xs);
+  flex-wrap: wrap;
+}
+
+.tarjeta-pregunta__enunciado {
+  margin: 0;
+  font-size: var(--texto-m);
+  font-weight: var(--peso-seminegrita);
+  color: var(--color-texto);
+  line-height: var(--interlineado-base);
+}
+
+.tarjeta-pregunta__opciones {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espacio-xs);
+}
+
+@media (min-width: 600px) {
+  .tarjeta-pregunta__opciones {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.tarjeta-pregunta__opcion {
+  padding: var(--espacio-xs) var(--espacio-s);
+  border-radius: var(--radio-s);
+  background-color: var(--color-fondo);
+  border: 1px solid var(--color-borde);
+  font-size: var(--texto-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-xs);
+}
+
+.tarjeta-pregunta__opcion--correcta {
+  background-color: var(--color-exito-fondo);
+  border-color: var(--color-exito);
+  color: var(--color-exito);
+  font-weight: var(--peso-seminegrita);
+}
+
+.tarjeta-pregunta__retro {
+  font-size: var(--texto-xs);
+  color: var(--color-info);
+  background-color: var(--color-info-fondo);
+  padding: var(--espacio-xs) var(--espacio-s);
+  border-left: 3px solid var(--color-info);
+  border-radius: var(--radio-s);
+  margin: 0;
+}
+
+.tarjeta-pregunta__acciones {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--espacio-xs);
+  margin-top: var(--espacio-xs);
+  border-top: 1px solid var(--color-borde);
+  padding-top: var(--espacio-xs);
+}
+
+/* Modal y propuestas de IA */
+.propuestas-ia-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+  max-height: 65vh;
+  overflow-y: auto;
+  padding-right: var(--espacio-xs);
+}
+
+.tarjeta-propuesta {
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  padding: var(--espacio-m);
+  background-color: var(--color-fondo);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+}
+
+.tarjeta-propuesta--aprobada {
+  border-color: var(--color-exito);
+  background-color: var(--color-exito-fondo);
+}
+
+.tarjeta-propuesta--descartada {
+  opacity: 0.4;
+  text-decoration: line-through;
+  pointer-events: none;
+}
+

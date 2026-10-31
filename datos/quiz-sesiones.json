@@ -1,0 +1,30 @@
+[
+  {
+    "usuarioId": "usu_000004",
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "preguntasIds": [
+      "pre_000018",
+      "pre_000020",
+      "pre_000005",
+      "pre_000017",
+      "pre_000010"
+    ],
+    "respuestas": {
+      "pre_000018": {
+        "respuesta": "Sierra",
+        "correcto": true,
+        "fecha": "2026-10-30T21:17:28.305Z"
+      },
+      "pre_000020": {
+        "respuesta": "Templado",
+        "correcto": true,
+        "fecha": "2026-10-30T21:17:40.975Z"
+      }
+    },
+    "inicio": "2026-10-30T21:17:11.507Z",
+    "finalizada": false,
+    "id": "qui_000001",
+    "fecha": "2026-10-30T21:17:11.508Z"
+  }
+]

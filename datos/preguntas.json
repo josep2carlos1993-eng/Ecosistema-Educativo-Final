@@ -1,0 +1,2166 @@
+[
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "vf",
+    "enunciado": "El Ecuador tiene 4 regiones?",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Si, son costa, sierra, amazonía y galápagos.",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000001",
+    "fecha": "2026-10-30T14:57:19.159Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "El Ecuador tiene 4 regiones que son: Costa, sierra, amazonia y .........",
+    "opciones": [],
+    "correcta": "Galapagos",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000002",
+    "fecha": "2026-10-30T15:03:40.118Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "Ecuador está dividido en ______ regiones naturales.",
+    "opciones": [],
+    "correcta": "4",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000003",
+    "fecha": "2026-10-30T15:05:33.907Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "La región donde se encuentra la capital del Ecuador es la ______.",
+    "opciones": [],
+    "correcta": "sierra",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000004",
+    "fecha": "2026-10-30T15:05:59.874Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "La región Costa se caracteriza por tener un clima principalmente ______.",
+    "opciones": [],
+    "correcta": "calido",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000005",
+    "fecha": "2026-10-30T15:06:21.714Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "La región más grande del Ecuador es la ______.",
+    "opciones": [],
+    "correcta": "amazonia",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000006",
+    "fecha": "2026-10-30T15:06:50.055Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "Las islas Galápagos pertenecen a la región ______.",
+    "opciones": [],
+    "correcta": "Insular",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000007",
+    "fecha": "2026-10-30T15:07:14.849Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "La región Costa se encuentra al ______ del Ecuador.",
+    "opciones": [],
+    "correcta": "norte",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000008",
+    "fecha": "2026-10-30T15:07:38.818Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "La cordillera de los ______ atraviesa la región Sierra.",
+    "opciones": [],
+    "correcta": "andes",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000009",
+    "fecha": "2026-10-30T15:07:59.923Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "El volcán Cotopaxi se encuentra en la región ______.",
+    "opciones": [],
+    "correcta": "sierra",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000010",
+    "fecha": "2026-10-30T15:08:22.151Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "La región Amazónica posee una gran variedad de ______.",
+    "opciones": [],
+    "correcta": "ecosistema",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000011",
+    "fecha": "2026-10-30T15:08:42.738Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "El río Amazonas pertenece a la región ______.",
+    "opciones": [],
+    "correcta": "Amazonia",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000012",
+    "fecha": "2026-10-30T15:09:04.431Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "La región Insular está formada por ______.",
+    "opciones": [],
+    "correcta": "mar",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000013",
+    "fecha": "2026-10-30T15:09:30.554Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "La ciudad de Guayaquil se encuentra en la región ______.",
+    "opciones": [],
+    "correcta": "costa",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000014",
+    "fecha": "2026-10-30T15:09:50.989Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "a ciudad de Quito se encuentra en la región ______.",
+    "opciones": [],
+    "correcta": "sierra",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000015",
+    "fecha": "2026-10-30T15:10:08.269Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "La región Amazónica también es conocida como ______.",
+    "opciones": [],
+    "correcta": "oriente",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000016",
+    "fecha": "2026-10-30T15:10:37.693Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "En la región Costa se cultiva principalmente el ______.",
+    "opciones": [],
+    "correcta": "banano",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000017",
+    "fecha": "2026-10-30T15:11:01.101Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "El cóndor es un ave representativa de la región ______.",
+    "opciones": [],
+    "correcta": "sierra",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000018",
+    "fecha": "2026-10-30T15:11:24.466Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "Las tortugas gigantes son características de las islas ______.",
+    "opciones": [],
+    "correcta": "galapagos",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000019",
+    "fecha": "2026-10-30T15:11:48.010Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "tipo": "completar",
+    "enunciado": "La región Sierra tiene un clima generalmente ______.",
+    "opciones": [],
+    "correcta": "templado",
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000020",
+    "fecha": "2026-10-30T15:12:11.052Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "Ecuador tiene cuatro regiones naturales. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000021",
+    "fecha": "2026-10-30T15:16:38.027Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "La región Costa se encuentra al este del Ecuador. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000022",
+    "fecha": "2026-10-30T15:17:12.958Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "Quito es la capital del Ecuador y está ubicada en la Sierra. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000023",
+    "fecha": "2026-10-30T15:17:26.327Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "La región Amazónica también se conoce como Oriente. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000024",
+    "fecha": "2026-10-30T15:17:40.333Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "Las islas Galápagos pertenecen a la región Insular. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000025",
+    "fecha": "2026-10-30T15:17:55.316Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "Guayaquil se encuentra en la región Sierra. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000026",
+    "fecha": "2026-10-30T15:18:09.156Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "La región Amazónica tiene una gran variedad de animales y plantas. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000027",
+    "fecha": "2026-10-30T16:22:27.314Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "La región Insular está ubicada en el océano Pacífico. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000028",
+    "fecha": "2026-10-30T16:22:46.871Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "La región Costa tiene un clima generalmente cálido. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000029",
+    "fecha": "2026-10-30T16:23:07.665Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "El volcán Chimborazo se encuentra en la región Costa. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000030",
+    "fecha": "2026-10-30T16:23:44.710Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "Las tortugas gigantes son características de Galápagos. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000031",
+    "fecha": "2026-10-30T16:24:13.537Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "La región Costa tiene un clima generalmente cálido. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000032",
+    "fecha": "2026-10-30T16:24:55.055Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "La región Amazónica es la más pequeña del Ecuador. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000033",
+    "fecha": "2026-10-30T16:25:16.143Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "El océano Pacífico baña las costas del Ecuador. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000034",
+    "fecha": "2026-10-30T16:25:36.885Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "La región Sierra tiene montañas y volcanes. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000035",
+    "fecha": "2026-10-30T16:25:56.741Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "La región Costa se caracteriza por tener playas. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000036",
+    "fecha": "2026-10-30T16:26:14.763Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "La región Insular está formada por islas. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000037",
+    "fecha": "2026-10-30T16:26:36.402Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "El río Napo se encuentra en la región Amazónica. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000038",
+    "fecha": "2026-10-30T16:26:57.709Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "La región Sierra también es conocida como Litoral. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000039",
+    "fecha": "2026-10-30T16:27:17.331Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 2,
+    "tipo": "vf",
+    "enunciado": "Ecuador posee una gran diversidad de climas y paisajes. (___)",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "",
+    "estado": "aprobado",
+    "origen": "docente",
+    "id": "pre_000040",
+    "fecha": "2026-10-30T16:27:45.669Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000041",
+    "fecha": "2026-10-30T19:56:52.856Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "Regiones del Ecuador. no tuvo ningún impacto en el desarrollo social ecuatoriano.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso, puesto que Regiones del Ecuador. fue determinante en la historia nacional.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000042",
+    "fecha": "2026-10-30T19:56:52.872Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000043",
+    "fecha": "2026-10-30T19:56:52.885Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000044",
+    "fecha": "2026-10-30T19:56:52.899Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "Las reformas vinculadas a Regiones del Ecuador. consolidaron derechos fundamentales en el país.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Efectivamente, Regiones del Ecuador. sentó las bases institucionales y ciudadanas analizadas.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000045",
+    "fecha": "2026-10-30T19:56:52.913Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "Al comparar los factores que condicionan el clima en las regiones del Ecuador, ¿qué elemento explica la variación de temperaturas en la región Interandina?",
+    "opciones": [
+      "La variación según la altitud",
+      "La cercanía directa con el océano Pacífico",
+      "La influencia exclusiva de la corriente de Humboldt",
+      "La presencia de llanuras selváticas"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "En la región Interandina o Sierra, el clima varía en función de la altitud, abarcando desde templado en los valles hasta frío y de páramo en las alturas.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000046",
+    "fecha": "2026-10-30T20:02:01.104Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "Tanto la región Litoral como la Amazónica presentan llanuras en su relieve, pero los manglares en la zona norte son un rasgo exclusivo del Litoral.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Ambas regiones presentan llanuras según el texto, pero la presencia de manglares en el norte corresponde únicamente a la región Litoral.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000047",
+    "fecha": "2026-10-30T20:02:01.121Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "¿Qué criterio geográfico permite diferenciar la localización de la Sierra respecto a la Amazonía?",
+    "opciones": [
+      "La Sierra se ubica a 1 000 km de la costa, mientras que la Amazonía está en la base de los Andes.",
+      "La Sierra atraviesa el país entre dos cordilleras, mientras que la Amazonía se sitúa al este de la cordillera de los Andes.",
+      "La Sierra se extiende desde el océano Pacífico, mientras que la Amazonía atraviesa el país de norte a sur.",
+      "La Sierra se localiza al este de los Andes, mientras que la Amazonía se halla en los callejones interandinos."
+    ],
+    "correcta": 1,
+    "retroalimentacion": "El texto precisa que la Sierra se ubica entre las dos cordilleras de los Andes atravesando el país, mientras que la Amazonía se localiza al este de dicha cordillera.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000048",
+    "fecha": "2026-10-30T20:02:01.136Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "completar",
+    "enunciado": "A diferencia del Litoral que cuenta con cuencas sedimentarias, el relieve de la región Insular se distingue por estar compuesto de islas y formaciones de origen ____.",
+    "opciones": [],
+    "correcta": "volcánico",
+    "retroalimentacion": "El relieve de Galápagos se compone exclusivamente de islas y formaciones de origen volcánico, a diferencia de las cuencas sedimentarias de la Costa.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000049",
+    "fecha": "2026-10-30T20:02:01.152Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "Al contrastar las actividades y características descritas entre el Litoral y la Sierra, ¿qué elemento distingue a la región Litoral?",
+    "opciones": [
+      "La conservación de bosques tropicales vírgenes",
+      "El desarrollo de agricultura de altura y riqueza colonial",
+      "La intensa actividad pesquera y la presencia de extensas playas",
+      "La condición de laboratorio vivo de especies únicas"
+    ],
+    "correcta": 2,
+    "retroalimentacion": "La actividad pesquera y las extensas playas caracterizan a la Costa, mientras que la agricultura de altura y la historia colonial corresponden a la Sierra.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000050",
+    "fecha": "2026-10-30T20:02:01.181Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "A diferencia del clima de la Amazonía que mantiene altas precipitaciones la mayor parte del año, la zona sur del Litoral se caracteriza por ser cálida y seca.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "El texto señala que el sur de la Costa es cálido y seco, contrastando con el clima amazónico que presenta altas precipitaciones casi todo el año.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000051",
+    "fecha": "2026-10-30T20:02:01.198Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "completar",
+    "enunciado": "Mientras que el clima de la Sierra depende de la altitud, el clima subtropical a fresco de la región Insular está influenciado por corrientes marinas como la corriente de ____.",
+    "opciones": [],
+    "correcta": "Humboldt",
+    "retroalimentacion": "El clima de Galápagos se diferencia por recibir la influencia directa de corrientes marinas, específicamente la corriente de Humboldt.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000052",
+    "fecha": "2026-10-30T20:02:01.211Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "Al examinar las formas del relieve ecuatoriano, ¿qué grupo de elementos corresponde de manera exclusiva a la región Interandina?",
+    "opciones": [
+      "Callejones interandinos, hoyas, valles y altos volcanes",
+      "Manglares, colinas y cuencas sedimentarias",
+      "Alta Amazonía, llanuras selváticas y playas",
+      "Islas de origen volcánico y cuencas sedimentarias"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Los callejones interandinos, hoyas, valles y volcanes como el Chimborazo y Cotopaxi conforman el relieve específico de la Sierra.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000053",
+    "fecha": "2026-10-30T20:02:01.224Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "La característica de poseer bosques tropicales vírgenes pertenece a la región Insular, mientras que ser Patrimonio Natural de la Humanidad corresponde a la Amazonía.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso porque los bosques tropicales vírgenes corresponden a la región Amazónica, y la denominación de Patrimonio Natural de la Humanidad le pertenece a Galápagos.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000054",
+    "fecha": "2026-10-30T20:02:01.238Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "Al analizar la distribución interna del clima en la región Litoral o Costa, ¿cuál es el contraste existente entre sus zonas norte y sur?",
+    "opciones": [
+      "El norte es tropical húmedo y el sur es cálido y seco.",
+      "El norte es de páramo y el sur es templado.",
+      "El norte es cálido y seco y el sur es tropical húmedo.",
+      "El norte presenta clima fresco y el sur altas precipitaciones constantes."
+    ],
+    "correcta": 0,
+    "retroalimentacion": "El texto explicita que la Costa presenta una diferenciación climática interna: tropical húmedo en el norte y cálido y seco en el sur.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000055",
+    "fecha": "2026-10-30T20:02:01.251Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000056",
+    "fecha": "2026-10-30T20:05:49.167Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "Regiones del Ecuador. no tuvo ningún impacto en el desarrollo social ecuatoriano.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso, puesto que Regiones del Ecuador. fue determinante en la historia nacional.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000057",
+    "fecha": "2026-10-30T20:05:49.209Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000058",
+    "fecha": "2026-10-30T20:05:49.233Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000059",
+    "fecha": "2026-10-30T20:05:49.245Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "Las reformas vinculadas a Regiones del Ecuador. consolidaron derechos fundamentales en el país.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Efectivamente, Regiones del Ecuador. sentó las bases institucionales y ciudadanas analizadas.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000060",
+    "fecha": "2026-10-30T20:05:49.259Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000061",
+    "fecha": "2026-10-30T20:05:49.274Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000062",
+    "fecha": "2026-10-30T20:05:49.289Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "Regiones del Ecuador. no tuvo ningún impacto en el desarrollo social ecuatoriano.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso, puesto que Regiones del Ecuador. fue determinante en la historia nacional.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000063",
+    "fecha": "2026-10-30T20:05:49.304Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000064",
+    "fecha": "2026-10-30T20:05:49.319Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000065",
+    "fecha": "2026-10-30T20:05:49.333Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "Las reformas vinculadas a Regiones del Ecuador. consolidaron derechos fundamentales en el país.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Efectivamente, Regiones del Ecuador. sentó las bases institucionales y ciudadanas analizadas.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000066",
+    "fecha": "2026-10-30T20:05:49.347Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000067",
+    "fecha": "2026-10-30T20:05:49.358Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000068",
+    "fecha": "2026-10-30T20:05:49.371Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "Regiones del Ecuador. no tuvo ningún impacto en el desarrollo social ecuatoriano.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso, puesto que Regiones del Ecuador. fue determinante en la historia nacional.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000069",
+    "fecha": "2026-10-30T20:05:49.384Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000070",
+    "fecha": "2026-10-30T20:05:49.395Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000071",
+    "fecha": "2026-10-30T20:05:55.573Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "Regiones del Ecuador. no tuvo ningún impacto en el desarrollo social ecuatoriano.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso, puesto que Regiones del Ecuador. fue determinante en la historia nacional.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000072",
+    "fecha": "2026-10-30T20:05:55.592Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000073",
+    "fecha": "2026-10-30T20:05:55.606Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000074",
+    "fecha": "2026-10-30T20:05:55.620Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "Las reformas vinculadas a Regiones del Ecuador. consolidaron derechos fundamentales en el país.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Efectivamente, Regiones del Ecuador. sentó las bases institucionales y ciudadanas analizadas.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000075",
+    "fecha": "2026-10-30T20:05:55.635Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000076",
+    "fecha": "2026-10-30T20:05:55.649Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000077",
+    "fecha": "2026-10-30T20:05:55.665Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "Regiones del Ecuador. no tuvo ningún impacto en el desarrollo social ecuatoriano.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso, puesto que Regiones del Ecuador. fue determinante en la historia nacional.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000078",
+    "fecha": "2026-10-30T20:05:55.678Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000079",
+    "fecha": "2026-10-30T20:05:55.687Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000080",
+    "fecha": "2026-10-30T20:05:55.700Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "Las reformas vinculadas a Regiones del Ecuador. consolidaron derechos fundamentales en el país.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Efectivamente, Regiones del Ecuador. sentó las bases institucionales y ciudadanas analizadas.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000081",
+    "fecha": "2026-10-30T20:05:55.713Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000082",
+    "fecha": "2026-10-30T20:05:55.725Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000083",
+    "fecha": "2026-10-30T20:05:55.735Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "vf",
+    "enunciado": "Regiones del Ecuador. no tuvo ningún impacto en el desarrollo social ecuatoriano.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso, puesto que Regiones del Ecuador. fue determinante en la historia nacional.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000084",
+    "fecha": "2026-10-30T20:05:55.751Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 3,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000085",
+    "fecha": "2026-10-30T20:05:55.765Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "opcion",
+    "enunciado": "Si un equipo de científicos necesita instalar una estación de monitoreo en un territorio insular situado a unos 1 000 km del continente, caracterizado por funcionar como un laboratorio vivo de especies únicas, ¿a qué región del Ecuador debe dirigirse?",
+    "opciones": [
+      "Región Litoral o Costa",
+      "Región Insular o Galápagos",
+      "Región Amazónica u Oriente",
+      "Región Interandina o Sierra"
+    ],
+    "correcta": 1,
+    "retroalimentacion": "La región Insular o Galápagos se ubica a unos 1 000 km de la costa continental y es reconocida como un laboratorio vivo de especies únicas en el mundo.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000086",
+    "fecha": "2026-10-30T20:06:37.319Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "vf",
+    "enunciado": "Un productor que planifica cultivar en un territorio caracterizado por presentar hoyas, valles y agricultura de altura debe ubicarse en la región Interandina o Sierra.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "El relieve compuesto por hoyas y valles, así como la práctica de la agricultura de altura, son elementos característicos de la región Interandina o Sierra.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000087",
+    "fecha": "2026-10-30T20:06:37.335Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "completar",
+    "enunciado": "Para realizar una investigación sobre grandes ríos y bosques tropicales vírgenes en un área ubicada al este de la cordillera de los Andes, una expedición debe trasladarse a la región ____.",
+    "opciones": [],
+    "correcta": "Amazónica",
+    "retroalimentacion": "La región Amazónica u Oriente se ubica al este de la cordillera de los Andes y contiene grandes ríos y bosques tropicales vírgenes.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000088",
+    "fecha": "2026-10-30T20:06:37.348Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "opcion",
+    "enunciado": "Un grupo de andinistas planea ascender volcanes como el Cotopaxi y el Chimborazo mientras recorre callejones interandinos. ¿En cuál de las siguientes regiones se desarrollará esta travesía?",
+    "opciones": [
+      "Región Amazónica u Oriente",
+      "Región Litoral o Costa",
+      "Región Interandina o Sierra",
+      "Región Insular o Galápagos"
+    ],
+    "correcta": 2,
+    "retroalimentacion": "Los volcanes como el Chimborazo y el Cotopaxi, al igual que los callejones interandinos, forman parte del relieve propio de la Sierra.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000089",
+    "fecha": "2026-10-30T20:06:37.362Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "vf",
+    "enunciado": "Si una empresa turística busca promocionar una zona por sus manglares en el norte y sus extensas playas combinadas con actividad pesquera, debe orientar su campaña hacia la región Amazónica.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "La presencia de manglares en el norte, extensas playas y una intensa actividad pesquera corresponde a la región Litoral o Costa, no a la Amazonía.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000090",
+    "fecha": "2026-10-30T20:06:37.376Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "opcion",
+    "enunciado": "Al comparar los factores que condicionan el clima en las regiones del país según el texto, ¿qué elemento determina la variación climática en la Sierra a diferencia de la región Insular?",
+    "opciones": [
+      "La altitud, que genera climas desde templados en valles hasta fríos en las alturas.",
+      "La influencia exclusiva de corrientes marinas como la corriente de Humboldt.",
+      "La presencia de cuencas sedimentarias y manglares.",
+      "Las precipitaciones continuas generadas por grandes ríos selváticos."
+    ],
+    "correcta": 0,
+    "retroalimentacion": "En la Sierra el clima varía de acuerdo con la altitud, pasando de templado a frío de páramo, mientras que en la región Insular el clima está condicionado por corrientes marinas como la de Humboldt.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000091",
+    "fecha": "2026-10-30T20:08:49.757Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "vf",
+    "enunciado": "Tanto la región Interandina como la región Insular presentan en su relieve formaciones asociadas a volcanes según el texto.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Es verdadero porque la Sierra presenta altos volcanes como el Chimborazo y el Cotopaxi, y la región Insular está compuesta por islas y formaciones de origen volcánico.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000092",
+    "fecha": "2026-10-30T20:08:49.779Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "opcion",
+    "enunciado": "Al examinar la información de la región Litoral o Costa, ¿qué contraste climático se manifiesta internamente entre sus zonas sur y norte?",
+    "opciones": [
+      "El sur es tropical húmedo y el norte es cálido y seco.",
+      "El sur es templado de valle y el norte es frío de páramo.",
+      "El sur es cálido y seco, mientras que el norte es tropical húmedo.",
+      "El sur es subtropical fresco y el norte carece de precipitaciones."
+    ],
+    "correcta": 2,
+    "retroalimentacion": "El texto explicita que el clima del Litoral es cálido y seco en la zona sur, en contraste con el norte donde es tropical húmedo.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000093",
+    "fecha": "2026-10-30T20:08:49.798Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "completar",
+    "enunciado": "A diferencia de la Amazonía que se ubica al este de los Andes, el Litoral se extiende desde el océano Pacífico hasta la ____ de la cordillera de los Andes.",
+    "opciones": [],
+    "correcta": "base",
+    "retroalimentacion": "El texto señala con precisión que el límite oriental del Litoral llega hasta la base de la cordillera de los Andes.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000094",
+    "fecha": "2026-10-30T20:08:49.814Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "opcion",
+    "enunciado": "Al analizar las actividades descritas en el texto, ¿qué particularidad distingue a la agricultura de la región Interandina respecto a la del Litoral?",
+    "opciones": [
+      "En la Interandina se especifica que es una agricultura de altura.",
+      "En la Interandina la agricultura se combina con la actividad pesquera.",
+      "En el Litoral la agricultura se realiza únicamente en valles y hoyas.",
+      "En el Litoral la agricultura depende exclusivamente de microclimas de páramo."
+    ],
+    "correcta": 0,
+    "retroalimentacion": "El texto califica a la producción de la Sierra como 'agricultura de altura', diferenciándola de la actividad agrícola general mencionada para el Litoral.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000095",
+    "fecha": "2026-10-30T20:08:49.830Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "vf",
+    "enunciado": "Las llanuras selváticas constituyen el relieve característico del Litoral, mientras que los manglares se localizan en la Amazonía.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso porque el texto ubica a los manglares en el norte del Litoral y a las vastas llanuras selváticas en la Amazonía.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000096",
+    "fecha": "2026-10-30T20:08:49.848Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "opcion",
+    "enunciado": "Al clasificar los atributos ecológicos e institucionales de las regiones, ¿qué distinción hace el texto entre Galápagos y la Amazonía?",
+    "opciones": [
+      "Galápagos posee grandes ríos navegables y la Amazonía formaciones de origen volcánico.",
+      "Galápagos es Patrimonio Natural de la Humanidad y laboratorio vivo, mientras la Amazonía alberga una de las mayores biodiversidades del planeta.",
+      "Galápagos cuenta con bosques tropicales vírgenes y la Amazonía destaca por su historia colonial.",
+      "Galápagos presenta altas precipitaciones todo el año y la Amazonía tiene un clima subtropical influenciado por corrientes marinas."
+    ],
+    "correcta": 1,
+    "retroalimentacion": "El texto otorga el estatus de Patrimonio Natural de la Humanidad y laboratorio vivo a Galápagos, mientras que a la Amazonía le atribuye poseer una de las mayores biodiversidades mundiales y bosques vírgenes.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000097",
+    "fecha": "2026-10-30T20:08:49.858Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "completar",
+    "enunciado": "A diferencia de otras regiones, el clima subtropical a fresco de Galápagos está influenciado por corrientes marinas como la corriente de ____.",
+    "opciones": [],
+    "correcta": "Humboldt",
+    "retroalimentacion": "El texto indica de manera directa que las corrientes marinas, específicamente la de Humboldt, influyen en el clima de la región Insular.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000098",
+    "fecha": "2026-10-30T20:08:49.871Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "opcion",
+    "enunciado": "Al descomponer los elementos constitutivos del relieve de la región Interandina o Sierra, ¿cuál de los siguientes grupos describe sus componentes exactos?",
+    "opciones": [
+      "Llanuras, colinas, cuencas sedimentarias y manglares.",
+      "Callejones interandinos, hoyas, valles y altos volcanes.",
+      "Alta Amazonía, llanuras selváticas y extensas playas.",
+      "Archipiélago, formaciones volcánicas y cuencas sedimentarias."
+    ],
+    "correcta": 1,
+    "retroalimentacion": "El texto señala que el relieve interandino está formado específicamente por callejones interandinos, hoyas, valles y altos volcanes.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000099",
+    "fecha": "2026-10-30T20:08:49.884Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "vf",
+    "enunciado": "La región Interandina se caracteriza geográficamente por atravesar el país de norte a sur situándose entre las dos cordilleras de los Andes.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Es verdadero porque el texto señala explícitamente que la Sierra atraviesa el país en esa dirección ubicándose entre ambas cordilleras.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000100",
+    "fecha": "2026-10-30T20:08:49.898Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "opcion",
+    "enunciado": "Al contrastar el régimen de humedad y lluvias entre la Amazonía y el sur de la Costa, ¿qué diferencia se extrae de la información provista?",
+    "opciones": [
+      "La Amazonía presenta altas precipitaciones casi todo el año, mientras que el sur del Litoral es cálido y seco.",
+      "La Amazonía carece de lluvias regulares y el sur del Litoral es tropical húmedo.",
+      "La Amazonía presenta un clima templado sin precipitaciones y el sur del Litoral es frío.",
+      "Ambas zonas comparten la condición de ser secas y con escasa pluviosidad durante el año."
+    ],
+    "correcta": 0,
+    "retroalimentacion": "El texto describe a la Amazonía como cálida, húmeda y con altas precipitaciones la mayor parte del año, en contraste directo con el sur de la Costa que es cálido y seco.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000101",
+    "fecha": "2026-10-30T20:08:49.908Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "completar",
+    "enunciado": "En el análisis del relieve del Litoral o Costa se distinguen llanuras, colinas, manglares en el norte y cuencas ____.",
+    "opciones": [],
+    "correcta": "sedimentarias",
+    "retroalimentacion": "El texto señala textualmente que las cuencas sedimentarias forman parte del relieve característico de la región Litoral.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000102",
+    "fecha": "2026-10-30T20:08:49.922Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "opcion",
+    "enunciado": "Al examinar la posición de las regiones frente al océano Pacífico, ¿cuál de las siguientes relaciones espaciales es correcta?",
+    "opciones": [
+      "La Amazonía limita al oeste con el océano Pacífico y Galápagos se halla en un río interior.",
+      "El Litoral se extiende desde el Pacífico hacia los Andes, mientras que Galápagos se ubica a unos 1 000 km de la costa continental en dicho océano.",
+      "La Sierra atraviesa las aguas del Pacífico y el Litoral se ubica a 1 000 km de distancia de este.",
+      "Galápagos y la Amazonía se ubican conjuntamente a 1 000 km al este de la costa continental."
+    ],
+    "correcta": 1,
+    "retroalimentacion": "El texto sitúa el inicio occidental del Litoral en el océano Pacífico y describe a Galápagos como un archipiélago emplazado a unos 1 000 km de la costa en el mismo océano.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000103",
+    "fecha": "2026-10-30T20:08:49.934Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "vf",
+    "enunciado": "De acuerdo con el texto, la riqueza en historia colonial y la diversidad de microclimas son rasgos atribuidos a la región Amazónica u Oriente.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso porque el texto atribuye la riqueza en historia colonial y la diversidad de microclimas a la región Interandina o Sierra.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000104",
+    "fecha": "2026-10-30T20:08:49.946Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000105",
+    "fecha": "2026-10-30T20:12:20.196Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "vf",
+    "enunciado": "Regiones del Ecuador. no tuvo ningún impacto en el desarrollo social ecuatoriano.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso, puesto que Regiones del Ecuador. fue determinante en la historia nacional.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000106",
+    "fecha": "2026-10-30T20:12:20.213Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000107",
+    "fecha": "2026-10-30T20:12:20.228Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000108",
+    "fecha": "2026-10-30T20:12:20.241Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "vf",
+    "enunciado": "Las reformas vinculadas a Regiones del Ecuador. consolidaron derechos fundamentales en el país.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Efectivamente, Regiones del Ecuador. sentó las bases institucionales y ciudadanas analizadas.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000109",
+    "fecha": "2026-10-30T20:12:20.255Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000110",
+    "fecha": "2026-10-30T20:12:20.269Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000111",
+    "fecha": "2026-10-30T20:12:20.284Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "vf",
+    "enunciado": "Regiones del Ecuador. no tuvo ningún impacto en el desarrollo social ecuatoriano.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso, puesto que Regiones del Ecuador. fue determinante en la historia nacional.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000112",
+    "fecha": "2026-10-30T20:12:20.298Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000113",
+    "fecha": "2026-10-30T20:12:20.331Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000114",
+    "fecha": "2026-10-30T20:12:20.340Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "vf",
+    "enunciado": "Las reformas vinculadas a Regiones del Ecuador. consolidaron derechos fundamentales en el país.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Efectivamente, Regiones del Ecuador. sentó las bases institucionales y ciudadanas analizadas.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000115",
+    "fecha": "2026-10-30T20:12:20.357Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000116",
+    "fecha": "2026-10-30T20:12:20.369Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000117",
+    "fecha": "2026-10-30T20:12:20.381Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "vf",
+    "enunciado": "Regiones del Ecuador. no tuvo ningún impacto en el desarrollo social ecuatoriano.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso, puesto que Regiones del Ecuador. fue determinante en la historia nacional.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000118",
+    "fecha": "2026-10-30T20:12:20.393Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 4,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000119",
+    "fecha": "2026-10-30T20:12:20.404Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000120",
+    "fecha": "2026-10-30T20:17:30.194Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "vf",
+    "enunciado": "Regiones del Ecuador. no tuvo ningún impacto en el desarrollo social ecuatoriano.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso, puesto que Regiones del Ecuador. fue determinante en la historia nacional.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000121",
+    "fecha": "2026-10-30T20:17:30.212Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "completar",
+    "enunciado": "El principio formativo esencial de Regiones del Ecuador. se consolidó mediante la educación ____.",
+    "opciones": [],
+    "correcta": "laica",
+    "retroalimentacion": "La educación laica fue el pilar fundamental que transformó el pensamiento crítico en Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000122",
+    "fecha": "2026-10-30T20:17:30.227Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "opcion",
+    "enunciado": "¿Cuál es una característica fundamental de Regiones del Ecuador. en el contexto estudiado?",
+    "opciones": [
+      "Representa una transformación estructural clave en Regiones del Ecuador.",
+      "Constituye un evento secundario sin mayor relevancia",
+      "Ocurrió exclusivamente fuera del territorio ecuatoriano",
+      "Fue descartado por las normativas de la época"
+    ],
+    "correcta": 0,
+    "retroalimentacion": "Es correcta porque define el impacto formativo central de Regiones del Ecuador..",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000123",
+    "fecha": "2026-10-30T20:17:30.242Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "vf",
+    "enunciado": "Las reformas vinculadas a Regiones del Ecuador. consolidaron derechos fundamentales en el país.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "Efectivamente, Regiones del Ecuador. sentó las bases institucionales y ciudadanas analizadas.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000124",
+    "fecha": "2026-10-30T20:17:30.257Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "opcion",
+    "enunciado": "Si un informe geográfico afirma que la región Litoral o Costa presenta un clima homogéneo en toda su extensión, ¿qué juicio evaluativo es correcto según el texto?",
+    "opciones": [
+      "Es incorrecto, porque se determina que es cálido y seco en el sur, y tropical húmedo en el norte.",
+      "Es correcto, pues se constata que se mantiene templado en valles y frío en las alturas.",
+      "Es correcto, ya que presenta altas precipitaciones homogéneas durante casi todo el año.",
+      "Es incorrecto, debido a que su clima es enteramente subtropical por la corriente de Humboldt."
+    ],
+    "correcta": 0,
+    "retroalimentacion": "El texto indica expresamente que el clima del Litoral varía regionalmente, siendo cálido y seco en el sur y tropical húmedo en el norte. Por lo tanto, afirmar que es homogéneo es incorrecto.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000125",
+    "fecha": "2026-10-30T20:23:11.597Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "vf",
+    "enunciado": "Al evaluar el relieve de la región Interandina o Sierra, es correcto afirmar que los volcanes Chimborazo y Cotopaxi forman parte de sus altos volcanes.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "El texto valida que el relieve de la Sierra está constituido por callejones interandinos, hoyas, valles y altos volcanes como el Chimborazo y el Cotopaxi.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000126",
+    "fecha": "2026-10-30T20:23:11.619Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "opcion",
+    "enunciado": "Al evaluar qué elementos fundamentan la designación de Galápagos como Patrimonio Natural de la Humanidad y laboratorio vivo, ¿cuál de los siguientes criterios se sustenta en la lectura?",
+    "opciones": [
+      "Su relieve caracterizado por cuencas sedimentarias y manglares al norte.",
+      "El desarrollo de agricultura de altura y su valor en historia colonial.",
+      "Ser un archipiélago de origen volcánico que alberga especies únicas en el mundo.",
+      "La presencia de extensas llanuras selváticas y grandes ríos navegables."
+    ],
+    "correcta": 2,
+    "retroalimentacion": "La condición de laboratorio vivo y patrimonio se sustenta en el texto por poseer especies únicas en el mundo dentro de formaciones e islas de origen volcánico.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000127",
+    "fecha": "2026-10-30T20:23:11.641Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "completar",
+    "enunciado": "Al evaluar los factores climáticos de la región Insular, se establece que su clima subtropical a fresco está influenciado por las corrientes marinas como la corriente de ____.",
+    "opciones": [],
+    "correcta": "Humboldt",
+    "retroalimentacion": "El texto precisa que el clima subtropical a fresco de la región Insular recibe la influencia directa de la corriente de Humboldt.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000128",
+    "fecha": "2026-10-30T20:23:11.661Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "vf",
+    "enunciado": "Al juzgar la localización de la región Amazónica u Oriente, resulta erróneo sostener que esta se ubica al este de la cordillera de los Andes.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "Es falso porque la Amazonía sí se localiza al este de la cordillera de los Andes, por lo que sostener dicha ubicación no constituye un error.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000129",
+    "fecha": "2026-10-30T20:23:11.678Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "opcion",
+    "enunciado": "Un estudiante dictamina que una región se distingue por tener llanuras, colinas, cuencas sedimentarias y manglares en el norte. ¿A qué región corresponde esta evaluación?",
+    "opciones": [
+      "Interandina o Sierra",
+      "Amazónica u Oriente",
+      "Litoral o Costa",
+      "Insular o Galápagos"
+    ],
+    "correcta": 2,
+    "retroalimentacion": "Dichas formas de relieve corresponden con exactitud a la descripción dada en el texto para la región Litoral o Costa.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000130",
+    "fecha": "2026-10-30T20:23:11.694Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "completar",
+    "enunciado": "Al evaluar la causa de la gradación climática en la Sierra (desde templado en valles hasta frío de páramo), se concluye que el clima varía según la ____.",
+    "opciones": [],
+    "correcta": "altitud",
+    "retroalimentacion": "En el texto se afirma de forma explícita que en la región Interandina o Sierra el clima varía según la altitud.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000131",
+    "fecha": "2026-10-30T20:23:11.709Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "vf",
+    "enunciado": "Al contrastar los relieves de las regiones, es acertado dictaminar que la alta Amazonía y las vastas llanuras selváticas pertenecen a la región Amazónica u Oriente.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "El texto confirma que el relieve amazónico comprende la alta Amazonía y vastas llanuras selváticas.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000132",
+    "fecha": "2026-10-30T20:23:11.724Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "opcion",
+    "enunciado": "Al evaluar qué conjunto de rasgos identifica integralmente a la región Interandina o Sierra según el contenido expuesto, se debe elegir:",
+    "opciones": [
+      "Islas volcánicas, clima fresco y aislamiento a 1 000 km de la costa.",
+      "Historia colonial, agricultura de altura y presencia de diversidad de microclimas.",
+      "Manglares en el norte, actividad pesquera y cuencas sedimentarias.",
+      "Bosques tropicales vírgenes, grandes ríos y altas precipitaciones."
+    ],
+    "correcta": 1,
+    "retroalimentacion": "El texto señala expresamente que la Sierra es una zona rica en historia colonial, agricultura de altura y diversidad de microclimas.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000133",
+    "fecha": "2026-10-30T20:23:11.734Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "vf",
+    "enunciado": "Es válido determinar que la región Insular posee un relieve de cuencas sedimentarias y manglares septentrionales.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": false,
+    "retroalimentacion": "El relieve de la región Insular está compuesto por islas y formaciones de origen volcánico, mientras que las cuencas sedimentarias y manglares pertenecen a la Costa.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000134",
+    "fecha": "2026-10-30T20:23:11.780Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "completar",
+    "enunciado": "Al evaluar la delimitación del Litoral o Costa, se comprueba que se extiende desde el océano Pacífico hasta la base de la cordillera de los ____.",
+    "opciones": [],
+    "correcta": "Andes",
+    "retroalimentacion": "El texto define la ubicación del Litoral extendiéndose desde el océano Pacífico hasta la base de la cordillera de los Andes.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000135",
+    "fecha": "2026-10-30T20:23:11.795Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "opcion",
+    "enunciado": "Al valorar críticamente la afirmación: 'La región Amazónica presenta bajas precipitaciones y clima seco', ¿qué resolución es correcta?",
+    "opciones": [
+      "Es acertada, pues su relieve de llanura propicia temporadas secas continuas.",
+      "Es errónea, puesto que se caracteriza por ser cálido, húmedo y con altas precipitaciones.",
+      "Es acertada, ya que la cordillera de los Andes bloquea toda la humedad hacia el este.",
+      "Es errónea, debido a que su clima es templado en valles y frío en las alturas."
+    ],
+    "correcta": 1,
+    "retroalimentacion": "La afirmación es errónea porque el texto describe el clima del Oriente como cálido, húmedo y con altas precipitaciones durante la mayor parte del año.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000136",
+    "fecha": "2026-10-30T20:23:11.831Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "vf",
+    "enunciado": "Al evaluar la localización de la Sierra, es correcto afirmar que atraviesa el país de norte a sur entre las dos cordilleras de los Andes.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "correcta": true,
+    "retroalimentacion": "El texto ratifica que la región Interandina atraviesa el país de norte a sur situada entre las dos cordilleras andinas.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000137",
+    "fecha": "2026-10-30T20:23:11.849Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "opcion",
+    "enunciado": "Al evaluar la distancia entre el archipiélago de Galápagos y la costa continental para dimensionar su ubicación oceánica, el dato textual correcto es:",
+    "opciones": [
+      "Situado a unos 100 km al este de los Andes.",
+      "Situado a unos 1 000 km de la costa continental en el océano Pacífico.",
+      "Extendido a lo largo del callejón interandino sin distancia marítima.",
+      "Ubicado en la base de la cordillera a 500 km del océano Pacífico."
+    ],
+    "correcta": 1,
+    "retroalimentacion": "El texto localiza a la región Insular como un archipiélago situado a unos 1 000 km de la costa continental en el océano Pacífico.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000138",
+    "fecha": "2026-10-30T20:23:11.867Z"
+  },
+  {
+    "temaId": "tem_000003",
+    "nivel": 5,
+    "tipo": "completar",
+    "enunciado": "Al evaluar las actividades distintivas del Litoral o Costa descritas en el texto, se aprecia que destaca por su agricultura, sus extensas playas y su intensa actividad ____.",
+    "opciones": [],
+    "correcta": "pesquera",
+    "retroalimentacion": "Según el texto, la Costa destaca específicamente por su intensa actividad pesquera, agrícola y por sus extensas playas.",
+    "origen": "ia",
+    "estado": "aprobado",
+    "id": "pre_000139",
+    "fecha": "2026-10-30T20:23:11.883Z"
+  }
+]

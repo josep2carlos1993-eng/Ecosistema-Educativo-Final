@@ -1,0 +1,24 @@
+[
+  {
+    "id": "can_000001",
+    "fecha": "2026-02-01T10:00:00.000Z",
+    "titulo": "Canto al Ferrocarril y la Libertad",
+    "temaId": "tem_000001",
+    "audio": "/recursos/audios/revolucion_liberal.wav",
+    "letra": "Por las montañas de los Andes,\nvuela el tren de la libertad.\nEloy Alfaro abre los caminos,\ncon educación y equidad.\n\nEl laicismo florece en la escuela,\nla razón nos guía al andar,\nconstruyendo un Ecuador moderno,\nque nadie podrá frenar.",
+    "lrc": "[00:00.00] (Introducción instrumental)\n[00:02.00] Por las montañas de los Andes\n[00:04.50] Vuela el tren de la libertad\n[00:07.00] Eloy Alfaro abre los caminos\n[00:09.50] Con educación y equidad\n[00:11.50] Construyendo un Ecuador moderno",
+    "autoria": "Prof. Carlos Mendoza y Taller Didáctico de Historia",
+    "licencia": "Creative Commons Atribución-CompartirIgual 4.0 (CC BY-SA 4.0)"
+  },
+  {
+    "id": "can_000002",
+    "fecha": "2026-02-05T14:30:00.000Z",
+    "titulo": "La Pepa de Oro en la Cuenca del Guayas",
+    "temaId": "tem_000002",
+    "audio": "/recursos/audios/revolucion_liberal.wav",
+    "letra": "Bajo el sol ardiente de la costa,\ncrece el fruto del gran cacao.\nPepa de oro en las haciendas,\nriqueza que al mundo ha llegado.\n\nLos barcos zarpan del río Guayas,\nllevando aroma y tradición,\npero el trabajo campesino,\nes la fuerza de la nación.",
+    "lrc": "[00:00.00] (Melodía costeña)\n[00:02.50] Bajo el sol ardiente de la costa\n[00:05.00] Crece el fruto del gran cacao\n[00:07.50] Pepa de oro en las haciendas\n[00:10.00] Riqueza que al mundo ha llegado\n[00:12.00] Es la fuerza viva de la nación",
+    "autoria": "Agrupación Musical Estudiantil Los Montubios",
+    "licencia": "Dominio Público Educativo"
+  }
+]

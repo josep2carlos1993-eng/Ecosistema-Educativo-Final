@@ -1,0 +1,57 @@
+[
+  {
+    "token": "tok_doc1",
+    "usuarioId": "usu_doc001",
+    "expira": "2099-01-01T00:00:00.000Z"
+  },
+  {
+    "token": "tok_doc2",
+    "usuarioId": "usu_doc002",
+    "expira": "2099-01-01T00:00:00.000Z"
+  },
+  {
+    "token": "tok_est1",
+    "usuarioId": "usu_est001",
+    "expira": "2099-01-01T00:00:00.000Z"
+  },
+  {
+    "token": "tok_adm1",
+    "usuarioId": "usu_adm001",
+    "expira": "2099-01-01T00:00:00.000Z"
+  },
+  {
+    "token": "29a4f077688d785e8b662778f59f60178d292fb493447639da5b8d21fd3452d5",
+    "usuarioId": "usu_000002",
+    "expira": "2026-10-30T23:14:16.601Z",
+    "id": "ses_000001",
+    "fecha": "2026-10-30T15:14:16.603Z"
+  },
+  {
+    "token": "ea6e53f97cc0dd3acd12159d0b2a24cea7478930cc660e5d3870bb7ad5618250",
+    "usuarioId": "usu_000001",
+    "expira": "2026-10-31T03:51:12.740Z",
+    "id": "ses_000002",
+    "fecha": "2026-10-30T19:51:12.741Z"
+  },
+  {
+    "token": "9efe1867cee3bfbb19e1bcb949b2b2b19ee9870bcf24ee0d826432251480b42e",
+    "usuarioId": "usu_000004",
+    "expira": "2026-10-31T04:19:35.503Z",
+    "id": "ses_000004",
+    "fecha": "2026-10-30T20:19:35.506Z"
+  },
+  {
+    "token": "99c63479cd64ae1ed2f424c9b572be6e213555ea21df5dcfda2263d82fb22b2b",
+    "usuarioId": "usu_000004",
+    "expira": "2026-10-31T05:10:59.074Z",
+    "id": "ses_000006",
+    "fecha": "2026-10-30T21:10:59.076Z"
+  },
+  {
+    "token": "81b2706a002599c2bc307fb44210afbf64e761eba055ce39cf02e5a405e090c3",
+    "usuarioId": "usu_000004",
+    "expira": "2026-10-31T05:13:10.998Z",
+    "id": "ses_000007",
+    "fecha": "2026-10-30T21:13:11.000Z"
+  }
+]

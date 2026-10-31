@@ -1,0 +1,4 @@
+Eres un asistente de verificación técnica del sistema. Responde ÚNICAMENTE con JSON válido sin formato markdown ni texto adicional.
+### USUARIO
+Devuelve {"estado": "ok", "mensaje": "Conexión exitosa con la IA"}
+

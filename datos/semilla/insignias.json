@@ -1,0 +1,70 @@
+[
+  {
+    "id": "ins_000001",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "nombre": "Primer Desafío",
+    "descripcion": "Completa tu primer quiz formativo",
+    "icono": "🎯",
+    "condicion": {
+      "tipo": "conteo",
+      "actividad": "quiz",
+      "minimo": 1
+    }
+  },
+  {
+    "id": "ins_000002",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "nombre": "Explorador de Temas",
+    "descripcion": "Realiza la lectura completa de al menos 2 temas",
+    "icono": "📖",
+    "condicion": {
+      "tipo": "conteo",
+      "actividad": "lectura",
+      "minimo": 2
+    }
+  },
+  {
+    "id": "ins_000003",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "nombre": "Precisión Impecable",
+    "descripcion": "Completa una actividad de quiz sin cometer ningún error",
+    "icono": "⭐",
+    "condicion": {
+      "tipo": "sinErrores",
+      "actividad": "quiz"
+    }
+  },
+  {
+    "id": "ins_000004",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "nombre": "Centenario",
+    "descripcion": "Acumula 100 puntos en tu cuenta",
+    "icono": "🏆",
+    "condicion": {
+      "tipo": "puntos",
+      "minimo": 100
+    }
+  },
+  {
+    "id": "ins_000005",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "nombre": "Experto Quiz Nivel 3",
+    "descripcion": "Alcanza el nivel 3 o superior en cualquier quiz temático",
+    "icono": "🥇",
+    "condicion": {
+      "tipo": "nivelQuiz",
+      "nivel": 3
+    }
+  },
+  {
+    "id": "ins_000006",
+    "fecha": "2026-01-01T00:00:00.000Z",
+    "nombre": "Constancia de Estudio",
+    "descripcion": "Mantén una racha de actividades de 2 o más días consecutivos hasta hoy",
+    "icono": "🔥",
+    "condicion": {
+      "tipo": "racha",
+      "dias": 2
+    }
+  }
+]

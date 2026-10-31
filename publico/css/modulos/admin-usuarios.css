@@ -1,0 +1,82 @@
+/* publico/css/modulos/admin-usuarios.css · Estilos para la administración de usuarios */
+
+.admin-herramientas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--espacio-m);
+  flex-wrap: wrap;
+  margin-bottom: var(--espacio-m);
+}
+
+.admin-filtros {
+  display: flex;
+  gap: var(--espacio-m);
+  align-items: center;
+  flex: 1;
+  max-width: 600px;
+}
+
+.admin-buscador {
+  flex: 1;
+  min-width: 220px;
+}
+
+.admin-tabla-wrapper {
+  overflow-x: auto;
+  border-radius: var(--radio-m);
+  box-shadow: var(--sombra-1);
+  background-color: var(--color-superficie);
+}
+
+.admin-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.admin-tabla th {
+  background-color: var(--color-primario);
+  color: var(--color-texto-inverso);
+  padding: var(--espacio-s) var(--espacio-m);
+  font-size: var(--texto-s);
+  font-weight: var(--peso-seminegrita);
+}
+
+.admin-tabla td {
+  padding: var(--espacio-s) var(--espacio-m);
+  border-bottom: 1px solid var(--color-borde);
+  font-size: var(--texto-s);
+  vertical-align: middle;
+}
+
+.admin-tabla tr:hover {
+  background-color: var(--color-fondo);
+}
+
+.admin-usuario-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-usuario-nombre {
+  font-weight: var(--peso-seminegrita);
+  color: var(--color-texto);
+}
+
+.admin-usuario-correo {
+  font-size: var(--texto-xs);
+  color: var(--color-texto-suave);
+}
+
+.admin-casilla-activo {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-xs);
+}
+
+.admin-casilla-activo input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}

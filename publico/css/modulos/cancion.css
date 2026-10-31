@@ -1,0 +1,204 @@
+/* publico/css/modulos/cancion.css · Estilos para el reproductor interactivo y karaoke */
+
+.cancion-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espacio-l);
+}
+
+@media (min-width: 860px) {
+  .cancion-layout {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
+}
+
+.cancion-reproductor-card {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-l);
+  box-shadow: var(--sombra-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+.cancion-disco {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-m);
+}
+
+.cancion-disco__vinilo {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radio-completo);
+  background: radial-gradient(circle, var(--color-superficie) 20%, var(--color-primario) 22%, var(--color-primario-oscuro) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-texto-inverso);
+  font-size: var(--texto-2xl);
+  box-shadow: var(--sombra-md);
+  flex-shrink: 0;
+  transition: transform 0.5s ease;
+}
+
+.cancion-disco__vinilo.girando {
+  animation: girarVinilo 6s linear infinite;
+}
+
+@keyframes girarVinilo {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.cancion-disco__info {
+  flex: 1;
+}
+
+.cancion-disco__titulo {
+  margin: 0;
+  font-size: var(--texto-xl);
+  color: var(--color-primario);
+}
+
+.cancion-disco__autoria {
+  color: var(--color-texto-suave);
+  font-size: var(--texto-s);
+  margin-top: var(--espacio-2xs);
+}
+
+.cancion-audio-elemento {
+  width: 100%;
+  border-radius: var(--radio-m);
+  outline: none;
+}
+
+/* Pestañas de letra */
+.cancion-pestanas {
+  display: flex;
+  gap: var(--espacio-xs);
+  border-bottom: 2px solid var(--color-borde);
+  margin-bottom: var(--espacio-m);
+}
+
+.cancion-pestana {
+  background: transparent;
+  border: none;
+  padding: var(--espacio-s) var(--espacio-m);
+  font-size: var(--texto-s);
+  font-weight: var(--peso-seminegrita);
+  color: var(--color-texto-suave);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: color var(--transicion), border-color var(--transicion);
+}
+
+.cancion-pestana--activa {
+  color: var(--color-primario);
+  border-bottom-color: var(--color-primario);
+}
+
+/* Visor de Karaoke */
+.cancion-karaoke-caja {
+  background-color: var(--color-fondo);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  padding: var(--espacio-xl) var(--espacio-m);
+  max-height: 420px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  text-align: center;
+}
+
+.cancion-karaoke__linea {
+  padding: var(--espacio-s) var(--espacio-m);
+  margin: var(--espacio-xs) 0;
+  border-radius: var(--radio-s);
+  font-size: var(--texto-base);
+  color: var(--color-texto-suave);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  line-height: var(--interlineado-normal);
+}
+
+.cancion-karaoke__linea:hover {
+  background-color: var(--color-superficie);
+  color: var(--color-texto);
+}
+
+.cancion-karaoke__linea--activa {
+  color: var(--color-primario);
+  font-weight: var(--peso-negrita);
+  font-size: var(--texto-lg);
+  background-color: var(--color-fondo-alt);
+  transform: scale(1.03);
+}
+
+.cancion-karaoke__pista {
+  font-size: var(--texto-xs);
+  color: var(--color-texto-suave);
+  margin-top: var(--espacio-s);
+  text-align: center;
+}
+
+/* Letra en texto plano */
+.cancion-letra-plana {
+  background-color: var(--color-fondo);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  padding: var(--espacio-l);
+  font-family: var(--fuente-base);
+  font-size: var(--texto-base);
+  line-height: var(--interlineado-amplio);
+  white-space: pre-wrap;
+  max-height: 420px;
+  overflow-y: auto;
+}
+
+/* Barra lateral con detalles y tema */
+.cancion-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-m);
+}
+
+.cancion-tema-card {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-l);
+  padding: var(--espacio-l);
+  box-shadow: var(--sombra-sm);
+}
+
+.cancion-tema-card__titulo {
+  margin: 0 0 var(--espacio-xs) 0;
+  font-size: var(--texto-m);
+  color: var(--color-primario);
+}
+
+.cancion-metadatos-lista {
+  list-style: none;
+  padding: 0;
+  margin: var(--espacio-s) 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+  font-size: var(--texto-s);
+}
+
+.cancion-metadatos-lista li {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-3xs);
+}
+
+.cancion-metadatos-lista strong {
+  color: var(--color-texto);
+}
+
+.cancion-metadatos-lista span {
+  color: var(--color-texto-suave);
+}

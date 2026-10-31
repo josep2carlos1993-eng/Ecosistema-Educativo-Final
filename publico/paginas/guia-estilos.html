@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guía de Estilos · Design System UNEMI</title>
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/componentes.css">
+  <style>
+    /* Estilos específicos para la visualización de la guía */
+    .muestra-color {
+      height: 70px;
+      border-radius: var(--radio-m);
+      display: flex;
+      align-items: flex-end;
+      padding: var(--espacio-xs) var(--espacio-s);
+      font-size: var(--texto-xs);
+      font-weight: var(--peso-negrita);
+      border: 1px solid var(--color-borde);
+    }
+    .seccion-guia {
+      margin-top: var(--espacio-2xl);
+      padding-top: var(--espacio-xl);
+      border-top: 1px solid var(--color-borde);
+    }
+    .disposicion-demo {
+      display: flex;
+      min-height: 100vh;
+    }
+    .contenido-demo {
+      flex: 1;
+      padding: var(--espacio-xl) var(--espacio-m);
+      max-width: var(--ancho-maximo);
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado institucional -->
+  <header class="encabezado">
+    <div class="contenedor encabezado__contenedor">
+      <div class="fila">
+        <button class="menu-toggle" id="btnToggleMenu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        <a href="#" class="encabezado__marca">
+          <span>UNEMI</span>
+          <span style="font-size: var(--texto-xs); opacity: 0.85; font-weight: var(--peso-regular);">| Ecosistema Educativo</span>
+        </a>
+      </div>
+      <div class="encabezado__acciones">
+        <span class="insignia insignia--acento">Design System v1.0</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="disposicion-demo">
+    <!-- Menú lateral navegable y plegable en móvil -->
+    <nav class="menu" id="menuLateral" aria-label="Navegación de la guía">
+      <span class="menu__titulo">Fundamentos</span>
+      <a href="#colores" class="menu__enlace menu__enlace--activo">Colores</a>
+      <a href="#tipografia" class="menu__enlace">Tipografía</a>
+      <a href="#espaciado" class="menu__enlace">Espaciado y Radios</a>
+      <span class="menu__titulo">Componentes</span>
+      <a href="#botones" class="menu__enlace">Botones (.btn)</a>
+      <a href="#tarjetas" class="menu__enlace">Tarjetas (.tarjeta)</a>
+      <a href="#formularios" class="menu__enlace">Formularios (.campo)</a>
+      <a href="#alertas" class="menu__enlace">Alertas (.alerta)</a>
+      <a href="#tablas" class="menu__enlace">Tablas (.tabla)</a>
+      <a href="#insignias" class="menu__enlace">Insignias y Chips</a>
+      <a href="#progresos" class="menu__enlace">Progreso y Carga</a>
+      <a href="#dialogos" class="menu__enlace">Modal y Avisos</a>
+      <a href="#vacio" class="menu__enlace">Estado Vacío (.vacio)</a>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="contenido-demo pila pila--amplia">
+      <header>
+        <span class="insignia insignia--primario">Design System UNEMI</span>
+        <h1>Guía de Estilos y Componentes</h1>
+        <p class="sample-body" style="color: var(--color-texto-suave);">
+          Catálogo interactivo de fundamentos visuales y componentes accesibles (WCAG AA), construidos con HTML semántico y variables nativas en CSS.
+        </p>
+      </header>
+
+      <!-- 1. COLORES -->
+      <section id="colores" class="seccion-guia pila">
+        <h2>1. Paleta de Colores</h2>
+        <p>Valores oficiales institucionales y de interfaz con contraste superior a 4.5:1 (AA).</p>
+        <div class="grid-auto">
+          <div class="tarjeta pila pila--compacta">
+            <div class="muestra-color" style="background-color: var(--color-primario); color: var(--color-texto-inverso);">#002E45</div>
+            <strong>--color-primario</strong>
+            <small>Azul institucional</small>
+          </div>
+          <div class="tarjeta pila pila--compacta">
+            <div class="muestra-color" style="background-color: var(--color-primario-oscuro); color: var(--color-texto-inverso);">#1C3247</div>
+            <strong>--color-primario-oscuro</strong>
+            <small>Fondo oscuro / paneles</small>
+          </div>
+          <div class="tarjeta pila pila--compacta">
+            <div class="muestra-color" style="background-color: var(--color-secundario); color: var(--color-texto-inverso);">#264763</div>
+            <strong>--color-secundario</strong>
+            <small>Secundario / hover</small>
+          </div>
+          <div class="tarjeta pila pila--compacta">
+            <div class="muestra-color" style="background-color: var(--color-acento); color: var(--color-primario);">#FF6900</div>
+            <strong>--color-acento</strong>
+            <small>Naranja institucional</small>
+          </div>
+          <div class="tarjeta pila pila--compacta">
+            <div class="muestra-color" style="background-color: var(--color-exito); color: var(--color-texto-inverso);">#156534</div>
+            <strong>--color-exito</strong>
+            <small>Estado exitoso (AA)</small>
+          </div>
+          <div class="tarjeta pila pila--compacta">
+            <div class="muestra-color" style="background-color: var(--color-advertencia); color: var(--color-texto-inverso);">#A24300</div>
+            <strong>--color-advertencia</strong>
+            <small>Advertencia (AA)</small>
+          </div>
+          <div class="tarjeta pila pila--compacta">
+            <div class="muestra-color" style="background-color: var(--color-error); color: var(--color-texto-inverso);">#B91C1C</div>
+            <strong>--color-error</strong>
+            <small>Error / peligro (AA)</small>
+          </div>
+          <div class="tarjeta pila pila--compacta">
+            <div class="muestra-color" style="background-color: var(--color-info); color: var(--color-texto-inverso);">#0D659D</div>
+            <strong>--color-info</strong>
+            <small>Informativo / foco (AA)</small>
+          </div>
+          <div class="tarjeta pila pila--compacta">
+            <div class="muestra-color" style="background-color: var(--color-fondo); color: var(--color-texto);">#F5F7F8</div>
+            <strong>--color-fondo</strong>
+            <small>Lienzo general</small>
+          </div>
+          <div class="tarjeta pila pila--compacta">
+            <div class="muestra-color" style="background-color: var(--color-superficie); color: var(--color-texto);">#FFFFFF</div>
+            <strong>--color-superficie</strong>
+            <small>Superficie de tarjeta</small>
+          </div>
+          <div class="tarjeta pila pila--compacta">
+            <div class="muestra-color" style="background-color: var(--color-borde); color: var(--color-texto);">#DFE7EC</div>
+            <strong>--color-borde</strong>
+            <small>Líneas divisorias</small>
+          </div>
+          <div class="tarjeta pila pila--compacta">
+            <div class="muestra-color" style="background-color: var(--color-texto); color: var(--color-texto-inverso);">#182D3E</div>
+            <strong>--color-texto</strong>
+            <small>Texto principal (12.8:1)</small>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. TIPOGRAFÍA -->
+      <section id="tipografia" class="seccion-guia pila">
+        <h2>2. Tipografía y Jerarquía</h2>
+        <div class="tarjeta pila">
+          <h1>Título H1 (var(--texto-3xl))</h1>
+          <h2>Título H2 (var(--texto-2xl))</h2>
+          <h3>Título H3 (var(--texto-xl))</h3>
+          <h4>Título H4 (var(--texto-l))</h4>
+          <h5>Título H5 (var(--texto-m))</h5>
+          <h6>Título H6 (var(--texto-s))</h6>
+          <p>
+            Párrafo estándar (--texto-m): La Universidad Estatal de Milagro promueve la excelencia académica, la innovación tecnológica y el compromiso ético con la comunidad a través de entornos inclusivos y accesibles.
+          </p>
+          <small>Texto secundario o nota pie (--texto-s): Contiene notas explicativas, fechas y metadatos complementarios.</small>
+          <p>
+            <a href="#">Enlace estándar con foco accesible e interacción hover</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- 3. BOTONES -->
+      <section id="botones" class="seccion-guia pila">
+        <h2>3. Botones (.btn)</h2>
+        <div class="tarjeta pila">
+          <p>Variantes funcionales con tamaño táctil mínimo de 44 px:</p>
+          <div class="fila">
+            <button type="button" class="btn btn--primario">Acción Primaria</button>
+            <button type="button" class="btn btn--secundario">Secundario</button>
+            <button type="button" class="btn btn--peligro">Eliminar / Peligro</button>
+            <button type="button" class="btn btn--texto">Enlace Texto</button>
+            <button type="button" class="btn btn--primario btn--pequeno">Pequeño</button>
+            <button type="button" class="btn btn--primario" disabled>Deshabilitado</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. TARJETAS -->
+      <section id="tarjetas" class="seccion-guia pila">
+        <h2>4. Tarjetas (.tarjeta)</h2>
+        <div class="grid-auto">
+          <article class="tarjeta tarjeta--interactiva pila">
+            <div class="tarjeta__encabezado">
+              <span class="insignia insignia--primario">Asignatura</span>
+              <h3>Entornos Virtuales</h3>
+            </div>
+            <div class="tarjeta__cuerpo">
+              <p>Módulo de aprendizaje adaptativo con actividades interactivas y tutoría inteligente socrática.</p>
+            </div>
+            <div class="tarjeta__pie">
+              <button type="button" class="btn btn--primario btn--pequeno">Acceder</button>
+            </div>
+          </article>
+
+          <article class="tarjeta tarjeta--interactiva pila">
+            <div class="tarjeta__encabezado">
+              <span class="insignia insignia--exito">Aprobado</span>
+              <h3>Programación Web</h3>
+            </div>
+            <div class="tarjeta__cuerpo">
+              <p>Fundamentos de HTML5 semántico, CSS3 moderno con variables y JavaScript modular ES6+.</p>
+            </div>
+            <div class="tarjeta__pie">
+              <button type="button" class="btn btn--secundario btn--pequeno">Ver detalles</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 5. FORMULARIOS -->
+      <section id="formularios" class="seccion-guia pila">
+        <h2>5. Formulario y Campos (.campo)</h2>
+        <div class="tarjeta">
+          <form class="pila" onsubmit="event.preventDefault();">
+            <div class="grid-auto">
+              <div class="campo">
+                <label for="campo-nombre">Nombre completo</label>
+                <input type="text" id="campo-nombre" placeholder="Ej: Jimena González" required>
+              </div>
+              <div class="campo">
+                <label for="campo-correo">Correo electrónico</label>
+                <input type="email" id="campo-correo" placeholder="usuario@unemi.edu.ec" required>
+                <span class="campo__error">Ingresa un correo institucional válido</span>
+              </div>
+            </div>
+
+            <div class="grid-auto">
+              <div class="campo">
+                <label for="campo-rol">Rol académico</label>
+                <select id="campo-rol">
+                  <option value="estudiante">Estudiante</option>
+                  <option value="docente">Docente</option>
+                  <option value="admin">Administrador</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="campo-archivo">Subir archivo</label>
+                <input type="file" id="campo-archivo">
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="campo-comentarios">Observaciones</label>
+              <textarea id="campo-comentarios" rows="3" placeholder="Escribe tus notas aquí..."></textarea>
+            </div>
+
+            <div class="fila fila--entre">
+              <button type="reset" class="btn btn--secundario">Restablecer</button>
+              <button type="submit" class="btn btn--primario">Guardar cambios</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- 6. ALERTAS -->
+      <section id="alertas" class="seccion-guia pila">
+        <h2>6. Alertas (.alerta)</h2>
+        <div class="pila">
+          <div class="alerta alerta--info" role="status">
+            <strong>Información:</strong> El periodo de matriculación ordinaria finaliza este viernes.
+          </div>
+          <div class="alerta alerta--exito" role="status">
+            <strong>Éxito:</strong> Tus calificaciones han sido guardadas y sincronizadas correctamente.
+          </div>
+          <div class="alerta alerta--advertencia" role="alert">
+            <strong>Advertencia:</strong> Tu contraseña expirará en 3 días. Por favor, actualízala.
+          </div>
+          <div class="alerta alerta--error" role="alert">
+            <strong>Error:</strong> No se pudo conectar al servicio de evaluación. Inténtalo más tarde.
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. TABLAS -->
+      <section id="tablas" class="seccion-guia pila">
+        <h2>7. Tabla con Desplazamiento Responsivo (.tabla)</h2>
+        <div class="tabla-contenedor">
+          <table class="tabla">
+            <thead>
+              <tr>
+                <th scope="col">Código</th>
+                <th scope="col">Asignatura</th>
+                <th scope="col">Docente</th>
+                <th scope="col">Paralelo</th>
+                <th scope="col">Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ASI-001</td>
+                <td>Arquitectura de Software</td>
+                <td>Ing. Carlos Mora</td>
+                <td>A1</td>
+                <td><span class="insignia insignia--exito">Activo</span></td>
+              </tr>
+              <tr>
+                <td>ASI-002</td>
+                <td>Diseño de Interfaces Web</td>
+                <td>Mgs. Laura Ortiz</td>
+                <td>B2</td>
+                <td><span class="insignia insignia--exito">Activo</span></td>
+              </tr>
+              <tr>
+                <td>ASI-003</td>
+                <td>Bases de Datos No Relacionales</td>
+                <td>Dr. Roberto Vera</td>
+                <td>A1</td>
+                <td><span class="insignia insignia--advertencia">Pendiente</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 8. INSIGNIAS Y CHIPS -->
+      <section id="insignias" class="seccion-guia pila">
+        <h2>8. Insignias (.insignia) y Chips (.chip)</h2>
+        <div class="tarjeta pila">
+          <h4>Insignias (Badges)</h4>
+          <div class="fila">
+            <span class="insignia">Por defecto</span>
+            <span class="insignia insignia--primario">Primario</span>
+            <span class="insignia insignia--acento">Acento UNEMI</span>
+            <span class="insignia insignia--exito">Completado</span>
+            <span class="insignia insignia--advertencia">En revisión</span>
+            <span class="insignia insignia--error">Reprobado</span>
+          </div>
+
+          <h4 style="margin-top: var(--espacio-m);">Chips de Selección</h4>
+          <div class="fila">
+            <button type="button" class="chip chip--activo">Todos</button>
+            <button type="button" class="chip">Unidad 1</button>
+            <button type="button" class="chip">Unidad 2</button>
+            <button type="button" class="chip">Evaluación</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. PROGRESO Y CARGA -->
+      <section id="progresos" class="seccion-guia pila">
+        <h2>9. Indicadores de Progreso (.progreso) y Carga (.cargando)</h2>
+        <div class="tarjeta pila">
+          <div class="pila pila--compacta">
+            <div class="fila fila--entre">
+              <span>Avance de la Unidad (Acento)</span>
+              <strong>75%</strong>
+            </div>
+            <div class="progreso" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <span class="progreso__barra" style="width: 75%;"></span>
+            </div>
+          </div>
+
+          <div class="pila pila--compacta">
+            <div class="fila fila--entre">
+              <span>Actividades aprobadas (Éxito)</span>
+              <strong>100%</strong>
+            </div>
+            <div class="progreso progreso--exito" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <span class="progreso__barra" style="width: 100%;"></span>
+            </div>
+          </div>
+
+          <h4 style="margin-top: var(--espacio-m);">Indicador de Carga</h4>
+          <div class="fila">
+            <div class="cargando" role="status" aria-label="Cargando datos">
+              <span class="cargando-spinner" aria-hidden="true"></span>
+              <span>Cargando recursos del tema...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. DIÁLOGOS Y MODAL -->
+      <section id="dialogos" class="seccion-guia pila">
+        <h2>10. Modal (.modal) y Toast (.toast / .aviso)</h2>
+        <div class="tarjeta pila">
+          <p>Prueba la interactividad accesible integrada con el núcleo del navegador (`ui.js`):</p>
+          <div class="fila">
+            <button type="button" class="btn btn--primario" id="btnProbarAviso">Lanzar Aviso Toast (4s)</button>
+            <button type="button" class="btn btn--secundario" id="btnProbarModal">Abrir Modal Accesible</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11. ESTADO VACÍO -->
+      <section id="vacio" class="seccion-guia pila">
+        <h2>11. Estado Vacío (.vacio)</h2>
+        <div class="vacio">
+          <div class="vacio__icono" aria-hidden="true">📋</div>
+          <div class="vacio__titulo">No hay tareas pendientes</div>
+          <p class="vacio__texto">
+            Has completado todas las actividades asignadas para esta semana. Revisa la agenda para ver tus próximas entregas.
+          </p>
+          <button type="button" class="btn btn--secundario btn--pequeno" style="margin-top: var(--espacio-s);">Actualizar lista</button>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Pie de página institucional -->
+  <footer class="pie">
+    <div class="contenedor pila">
+      <div class="fila fila--entre">
+        <div>
+          <strong>UNEMI — Universidad Estatal de Milagro</strong>
+          <p>Ecosistema Educativo Digital · Sistema de diseño accesible</p>
+        </div>
+        <div class="fila">
+          <a href="#">Términos</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Soporte</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module">
+    import { aviso, confirmar, modal } from '/js/nucleo/ui.js';
+
+    // Menú móvil desplegable
+    const btnToggleMenu = document.getElementById('btnToggleMenu');
+    const menuLateral = document.getElementById('menuLateral');
+    if (btnToggleMenu && menuLateral) {
+      btnToggleMenu.addEventListener('click', () => {
+        const abierto = menuLateral.classList.toggle('abierto');
+        btnToggleMenu.setAttribute('aria-expanded', abierto);
+      });
+    }
+
+    // Botones de demostración de UI
+    const btnAviso = document.getElementById('btnProbarAviso');
+    if (btnAviso) {
+      btnAviso.addEventListener('click', () => {
+        aviso('¡Aviso de prueba lanzado con éxito!', 'exito');
+      });
+    }
+
+    const btnModal = document.getElementById('btnProbarModal');
+    if (btnModal) {
+      btnModal.addEventListener('click', async () => {
+        const resultado = await confirmar('¿Confirmas que deseas validar el componente modal con foco atrapado y tecla Escape?');
+        aviso(resultado ? 'Confirmación aceptada' : 'Confirmación cancelada', resultado ? 'exito' : 'info');
+      });
+    }
+  </script>
+</body>
+</html>

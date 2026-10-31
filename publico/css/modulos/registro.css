@@ -1,0 +1,73 @@
+/* publico/css/modulos/registro.css · Estilos de la página de registro */
+
+.registro-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  padding: var(--espacio-l) var(--espacio-s);
+}
+
+.registro-tarjeta {
+  width: 100%;
+  max-width: 500px;
+  padding: var(--espacio-xl);
+  box-shadow: var(--sombra-2);
+}
+
+.registro-encabezado {
+  text-align: center;
+  margin-bottom: var(--espacio-m);
+}
+
+.registro-encabezado h1 {
+  font-size: var(--texto-2xl);
+  color: var(--color-primario);
+  margin-bottom: var(--espacio-xs);
+}
+
+.registro-encabezado p {
+  color: var(--color-texto-suave);
+  font-size: var(--texto-s);
+}
+
+.registro-fila-nombres {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--espacio-m);
+}
+
+@media (max-width: 480px) {
+  .registro-fila-nombres {
+    grid-template-columns: 1fr;
+  }
+}
+
+.registro-casilla {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--espacio-s);
+  margin-top: var(--espacio-xs);
+}
+
+.registro-casilla input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-height: 18px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.registro-casilla label {
+  font-size: var(--texto-s);
+  font-weight: var(--peso-regular);
+  cursor: pointer;
+  line-height: var(--linea-base);
+}
+
+.registro-pie {
+  text-align: center;
+  margin-top: var(--espacio-l);
+  font-size: var(--texto-s);
+  color: var(--color-texto-suave);
+}

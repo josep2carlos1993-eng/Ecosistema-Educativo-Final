@@ -1,0 +1,19 @@
+/* publico/css/modulos/prueba-datos.css · Estilos específicos de prueba de datos */
+
+.contenedor-prueba {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-xl);
+}
+
+.item-registro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--espacio-m);
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-m);
+  gap: var(--espacio-m);
+  flex-wrap: wrap;
+}

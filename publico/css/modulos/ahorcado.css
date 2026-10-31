@@ -1,0 +1,290 @@
+/* publico/css/modulos/ahorcado.css · Estilos del juego del ahorcado */
+
+.ahorcado-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ahorcado-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--espacio-m);
+  padding-bottom: var(--espacio-m);
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.ahorcado-cabecera__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-xs);
+}
+
+.ahorcado-cabecera__titulo {
+  font-size: var(--texto-xl);
+  color: var(--color-primario);
+  margin: 0;
+}
+
+.ahorcado-cabecera__tema {
+  font-size: var(--texto-s);
+  color: var(--color-texto-suave);
+}
+
+.ahorcado-tablero {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: var(--espacio-xl);
+  align-items: center;
+  background-color: var(--color-superficie);
+  padding: var(--espacio-xl);
+  border-radius: var(--radio-l);
+  box-shadow: var(--sombra-1);
+  border: 1px solid var(--color-borde);
+}
+
+@media (max-width: 680px) {
+  .ahorcado-tablero {
+    grid-template-columns: 1fr;
+    gap: var(--espacio-l);
+    padding: var(--espacio-m);
+  }
+}
+
+/* Ilustración del Globo */
+.ahorcado-ilustracion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.globo-svg {
+  width: 180px;
+  height: 220px;
+  overflow: visible;
+}
+
+.globo-cuerpo {
+  transform-origin: 100px 110px;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), fill 0.3s ease;
+}
+
+.globo-cuerda {
+  transition: d 0.4s ease, stroke-dashoffset 0.4s ease;
+}
+
+.globo-brillo {
+  transform-origin: 100px 110px;
+  transition: opacity 0.3s ease, transform 0.4s ease;
+}
+
+.globo-canastilla {
+  transform-origin: 100px 170px;
+  transition: transform 0.4s ease;
+}
+
+/* Estados del globo según errores (0 a 4) */
+.globo--0 .globo-cuerpo {
+  transform: scale(1);
+  fill: var(--color-acento);
+}
+.globo--0 .globo-brillo {
+  opacity: 0.6;
+  transform: scale(1);
+}
+
+.globo--1 .globo-cuerpo {
+  transform: scale(0.85, 0.88);
+  fill: #f57c00;
+}
+.globo--1 .globo-brillo {
+  opacity: 0.45;
+  transform: scale(0.85, 0.88);
+}
+
+.globo--2 .globo-cuerpo {
+  transform: scale(0.68, 0.72);
+  fill: #e65100;
+}
+.globo--2 .globo-brillo {
+  opacity: 0.3;
+  transform: scale(0.68, 0.72);
+}
+
+.globo--3 .globo-cuerpo {
+  transform: scale(0.48, 0.52);
+  fill: #bf360c;
+}
+.globo--3 .globo-brillo {
+  opacity: 0.1;
+  transform: scale(0.48, 0.52);
+}
+
+.globo--4 .globo-cuerpo {
+  transform: scale(0.32, 0.22) translateY(60px);
+  fill: #757575;
+}
+.globo--4 .globo-brillo {
+  opacity: 0;
+}
+.globo--4 .globo-canastilla {
+  transform: translateY(15px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .globo-cuerpo,
+  .globo-cuerda,
+  .globo-brillo,
+  .globo-canastilla {
+    transition: none !important;
+  }
+}
+
+.ahorcado-marcador-errores {
+  margin-top: var(--espacio-s);
+  font-size: var(--texto-s);
+  font-weight: var(--peso-seminegrita);
+  color: var(--color-texto-suave);
+}
+
+.ahorcado-marcador-errores--alerta {
+  color: var(--color-error);
+}
+
+/* Zona de juego */
+.ahorcado-juego {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-l);
+}
+
+.ahorcado-pista {
+  background-color: var(--color-info-fondo);
+  border-left: 4px solid var(--color-info);
+  padding: var(--espacio-s) var(--espacio-m);
+  border-radius: var(--radio-m);
+  font-size: var(--texto-s);
+  color: var(--color-texto);
+  line-height: var(--interlineado-base);
+}
+
+/* Casillas de las letras */
+.ahorcado__casillas {
+  display: flex;
+  justify-content: center;
+  gap: var(--espacio-s);
+  flex-wrap: wrap;
+}
+
+.casilla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 56px;
+  border-bottom: 3px solid var(--color-primario);
+  background-color: var(--color-fondo);
+  border-radius: var(--radio-s) var(--radio-s) 0 0;
+  font-size: var(--texto-xl);
+  font-weight: var(--peso-negrita);
+  color: var(--color-primario);
+  text-transform: uppercase;
+  user-select: none;
+  transition: all var(--transicion);
+}
+
+@media (max-width: 400px) {
+  .casilla {
+    width: 40px;
+    height: 48px;
+    font-size: var(--texto-l);
+  }
+}
+
+.casilla--acierto {
+  color: var(--color-exito);
+  border-bottom-color: var(--color-exito);
+  background-color: var(--color-exito-fondo);
+}
+
+.casilla--revelada {
+  color: var(--color-error);
+  border-bottom-color: var(--color-error);
+  background-color: var(--color-error-fondo);
+}
+
+/* Teclado en pantalla */
+.teclado {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--espacio-xs);
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.tecla {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 42px;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-s);
+  font-size: var(--texto-s);
+  font-weight: var(--peso-seminegrita);
+  cursor: pointer;
+  transition: background-color var(--transicion), transform var(--transicion), color var(--transicion);
+  user-select: none;
+}
+
+@media (max-width: 400px) {
+  .tecla {
+    width: 30px;
+    height: 38px;
+    font-size: var(--texto-xs);
+  }
+}
+
+.tecla:hover:not(:disabled) {
+  background-color: var(--color-secundario);
+  color: var(--color-texto-inverso);
+  border-color: var(--color-secundario);
+  transform: translateY(-2px);
+}
+
+.tecla:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.tecla--acierto:disabled {
+  background-color: var(--color-exito-fondo);
+  border-color: var(--color-exito);
+  color: var(--color-exito);
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+.tecla--fallo:disabled {
+  background-color: var(--color-fondo);
+  border-color: var(--color-borde);
+  color: var(--color-texto-suave);
+  opacity: 0.4;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.ahorcado-acciones {
+  display: flex;
+  justify-content: center;
+  gap: var(--espacio-m);
+  margin-top: var(--espacio-s);
+}

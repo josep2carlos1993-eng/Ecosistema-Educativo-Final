@@ -1,0 +1,213 @@
+[
+  {
+    "usuarioId": "usu_000002",
+    "actividad": "ahorcado",
+    "temaId": "tem_000001",
+    "nivel": 1,
+    "puntaje": 8,
+    "maximo": 10,
+    "errores": 1,
+    "duracionSeg": 39,
+    "detalle": {},
+    "puntos": 32,
+    "id": "int_000001",
+    "fecha": "2026-10-28T03:47:31.874Z"
+  },
+  {
+    "usuarioId": "usu_000004",
+    "actividad": "tema-revisado",
+    "temaId": "tem_000001",
+    "nivel": 1,
+    "puntaje": 1,
+    "maximo": 1,
+    "errores": 0,
+    "duracionSeg": 0,
+    "detalle": {},
+    "puntos": 30,
+    "id": "int_000002",
+    "fecha": "2026-10-30T04:14:41.954Z"
+  },
+  {
+    "usuarioId": "usu_000004",
+    "actividad": "tema-revisado",
+    "temaId": "tem_000002",
+    "nivel": 1,
+    "puntaje": 1,
+    "maximo": 1,
+    "errores": 0,
+    "duracionSeg": 0,
+    "detalle": {},
+    "puntos": 30,
+    "id": "int_000003",
+    "fecha": "2026-10-30T04:15:04.475Z"
+  },
+  {
+    "usuarioId": "usu_000004",
+    "actividad": "tema-revisado",
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "puntaje": 1,
+    "maximo": 1,
+    "errores": 0,
+    "duracionSeg": 0,
+    "detalle": {},
+    "puntos": 30,
+    "id": "int_000004",
+    "fecha": "2026-10-30T04:15:16.763Z"
+  },
+  {
+    "usuarioId": "usu_000004",
+    "actividad": "tema-revisado",
+    "temaId": "tem_000004",
+    "nivel": 1,
+    "puntaje": 1,
+    "maximo": 1,
+    "errores": 0,
+    "duracionSeg": 0,
+    "detalle": {},
+    "puntos": 30,
+    "id": "int_000005",
+    "fecha": "2026-10-30T04:15:39.416Z"
+  },
+  {
+    "usuarioId": "usu_000004",
+    "actividad": "emparejar",
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "puntaje": 1,
+    "maximo": 1,
+    "errores": 0,
+    "duracionSeg": 9,
+    "detalle": {
+      "totalPares": 1,
+      "errores": 0
+    },
+    "puntos": 60,
+    "id": "int_000006",
+    "fecha": "2026-10-30T04:16:47.281Z"
+  },
+  {
+    "usuarioId": "usu_000004",
+    "actividad": "sopa-letras",
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "puntaje": 2,
+    "maximo": 2,
+    "errores": 0,
+    "duracionSeg": 19,
+    "detalle": {},
+    "puntos": 70,
+    "id": "int_000007",
+    "fecha": "2026-10-30T04:17:15.676Z"
+  },
+  {
+    "usuarioId": "usu_000004",
+    "actividad": "emparejar",
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "puntaje": 1,
+    "maximo": 1,
+    "errores": 0,
+    "duracionSeg": 3,
+    "detalle": {
+      "totalPares": 1,
+      "errores": 0
+    },
+    "puntos": 60,
+    "id": "int_000008",
+    "fecha": "2026-10-30T13:42:30.863Z"
+  },
+  {
+    "usuarioId": "usu_000004",
+    "actividad": "sopa-letras",
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "puntaje": 2,
+    "maximo": 2,
+    "errores": 0,
+    "duracionSeg": 15,
+    "detalle": {},
+    "puntos": 70,
+    "id": "int_000009",
+    "fecha": "2026-10-30T13:43:01.963Z"
+  },
+  {
+    "usuarioId": "usu_000004",
+    "actividad": "flashcards",
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "puntaje": 1,
+    "maximo": 1,
+    "errores": 0,
+    "duracionSeg": 16,
+    "detalle": {
+      "totalTarjetas": 1,
+      "aciertos": 1,
+      "errores": 0
+    },
+    "puntos": 50,
+    "id": "int_000010",
+    "fecha": "2026-10-30T13:48:27.249Z"
+  },
+  {
+    "usuarioId": "usu_000002",
+    "actividad": "emparejar",
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "puntaje": 1,
+    "maximo": 1,
+    "errores": 0,
+    "duracionSeg": 2,
+    "detalle": {
+      "totalPares": 1,
+      "errores": 0
+    },
+    "puntos": 60,
+    "id": "int_000011",
+    "fecha": "2026-10-30T13:58:47.070Z"
+  },
+  {
+    "usuarioId": "usu_000004",
+    "actividad": "quiz",
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "puntaje": 0,
+    "maximo": 5,
+    "errores": 5,
+    "duracionSeg": 1,
+    "detalle": {
+      "aprobado": false
+    },
+    "puntos": 0,
+    "id": "int_000012",
+    "fecha": "2026-10-30T20:19:35.775Z"
+  },
+  {
+    "usuarioId": "usu_000004",
+    "actividad": "ahorcado",
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "puntaje": 10,
+    "maximo": 10,
+    "errores": 0,
+    "duracionSeg": 23,
+    "detalle": {},
+    "puntos": 60,
+    "id": "int_000013",
+    "fecha": "2026-10-30T21:30:34.251Z"
+  },
+  {
+    "usuarioId": "usu_000004",
+    "actividad": "ahorcado",
+    "temaId": "tem_000003",
+    "nivel": 1,
+    "puntaje": 0,
+    "maximo": 10,
+    "errores": 4,
+    "duracionSeg": 33,
+    "detalle": {},
+    "puntos": 0,
+    "id": "int_000014",
+    "fecha": "2026-10-30T21:31:18.426Z"
+  }
+]

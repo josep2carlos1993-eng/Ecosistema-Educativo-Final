@@ -1,0 +1,130 @@
+[
+  {
+    "id": "tem_000001",
+    "unidadId": "uni_000001",
+    "titulo": "La Revolución Liberal Radical",
+    "orden": 1,
+    "objetivos": [
+      "Analizar el impacto de la Revolución Liberal de Eloy Alfaro",
+      "Comprender la separación entre la Iglesia y el Estado ecuatoriano",
+      "Identificar los avances en educación pública y derechos civiles"
+    ],
+    "resumen": "Proceso de transformación política y social liderado por Eloy Alfaro a partir de 1895 en Ecuador, consolidando la educación laica, el registro civil y la integración nacional a través del ferrocarril.",
+    "ejemplos": [
+      "Implementación del Registro Civil y matrimonio civil en 1902",
+      "Construcción del Ferrocarril Trasandino entre Guayaquil y Quito"
+    ],
+    "erroresFrecuentes": [
+      "Confundir el liberalismo político alfarista con el neoliberalismo contemporáneo",
+      "Creer que la Revolución Liberal eliminó inmediatamente la desigualdad social indígena"
+    ],
+    "preguntasGuia": [
+      "¿Qué transformaciones clave introdujo la Constitución de 1906?",
+      "¿Por qué el laicismo fue fundamental para la educación ecuatoriana?"
+    ],
+    "recursos": [
+      {
+        "tipo": "enlace",
+        "titulo": "Archivo Histórico Nacional - Período Liberal",
+        "url": "https://culturaypatrimonio.gob.ec"
+      }
+    ],
+    "palabrasClave": [
+      "alfarismo",
+      "laicismo",
+      "ferrocarril",
+      "ciudadania",
+      "constitucion"
+    ],
+    "dificultad": "media",
+    "fuentes": "Ayala Mora, E. (2008). Resumen de Historia del Ecuador. Corporación Editora Nacional.",
+    "estado": "publicado",
+    "fecha": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "tem_000002",
+    "unidadId": "uni_000001",
+    "titulo": "El auge cacaotero y la economía agroexportadora",
+    "orden": 2,
+    "objetivos": [
+      "Examinar la consolidación del modelo agroexportador cacaotero",
+      "Comprender la inserción del Ecuador en el mercado internacional",
+      "Identificar la crisis de sobreproducción y plagas en la década de 1920"
+    ],
+    "resumen": "Etapa histórica comprendida entre fines del siglo XIX e inicios del siglo XX caracterizada por la masiva producción y exportación del gran cacao, enriquecimiento de la banca costeña y posterior crisis económica.",
+    "ejemplos": [
+      "Creación del Banco Comercial y Agrícola en Guayaquil",
+      "Aparición de plagas como la monilla y la escoba de bruja"
+    ],
+    "erroresFrecuentes": [
+      "Asumir que la riqueza cacaotera benefició equitativamente a los peones agrícolas",
+      "Ignorar la dependencia monoproductora frente a los mercados europeos"
+    ],
+    "preguntasGuia": [
+      "¿Qué factores convirtieron a Ecuador en el principal exportador mundial de cacao?",
+      "¿Cómo influyó la Primera Guerra Mundial en la caída de las exportaciones?"
+    ],
+    "recursos": [
+      {
+        "tipo": "enlace",
+        "titulo": "Banco Central del Ecuador - Museo Numismático",
+        "url": "https://museo.bce.fin.ec"
+      }
+    ],
+    "palabrasClave": [
+      "cacao",
+      "agroexportacion",
+      "hacienda",
+      "monilla",
+      "banca"
+    ],
+    "dificultad": "media",
+    "fuentes": "Carbo, L. A. (1978). Historia monetaria y cambiaria del Ecuador. Banco Central del Ecuador.",
+    "estado": "publicado",
+    "fecha": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "unidadId": "uni_000002",
+    "titulo": "Regiones del Ecuador.",
+    "orden": 1,
+    "estado": "publicado",
+    "id": "tem_000003",
+    "fecha": "2026-10-28T03:26:04.839Z",
+    "dificultad": "media",
+    "resumen": "1. Litoral o Costa\n\n• Ubicación: Se extiende desde el océano Pacífico hasta la base de la cordillera de los Andes.\n• Relieve: Presenta llanuras, colinas, cuencas sedimentarias y manglares en el norte.\n• Clima: Cálido y seco en el sur, y tropical húmedo en el norte.\n• Características: Destaca por su intensa actividad pesquera, agrícola y por sus extensas playas. Puedes revisar más detalles en el portal de ViajandoX.\n\n2. Interandina o Sierra\n\n• Ubicación: Atraviesa el país de norte a sur entre las dos cordilleras de los Andes.\n• Relieve: Formada por callejones interandinos, hoyas, valles y altos volcanes (como el Chimborazo y el Cotopaxi).\n• Clima: Varía según la altitud, desde templado en los valles hasta frío y de páramo en las alturas.\n• Características: Zona rica en historia colonial, agricultura de altura y diversidad de microclimas.\n\n3. Amazónica u Oriente\n\n• Ubicación: Se localiza al este de la cordillera de los Andes.\n• Relieve: Comprende la alta Amazonía y vastas llanuras selváticas.\n• Clima: Cálido, húmedo y con altas precipitaciones durante la mayor parte del año.\n• Características: Alberga una de las mayores biodiversidades del planeta, grandes ríos y bosques tropicales vírgenes.\n\n4. Insular o Galápagos\n\n• Ubicación: Archipiélago situado a unos 1 000 km de la costa continental en el océano Pacífico.\n• Relieve: Islas y formaciones de origen volcánico.\n• Clima: Subtropical a fresco, influenciado por las corrientes marinas como la corriente de Humboldt.\n• Características: Reconocido como Patrimonio Natural de la Humanidad y laboratorio vivo de especies únicas en el mundo.",
+    "fuentes": "",
+    "palabrasClave": [
+      "costa",
+      "sierra"
+    ],
+    "objetivos": [
+      "Conocer las regiones"
+    ],
+    "preguntasGuia": [],
+    "ejemplos": [],
+    "erroresFrecuentes": [],
+    "recursos": []
+  },
+  {
+    "unidadId": "uni_000003",
+    "titulo": "Economía Actualizada",
+    "orden": 1,
+    "estado": "publicado",
+    "id": "tem_000004",
+    "fecha": "2026-10-28T04:19:41.643Z",
+    "dificultad": "media",
+    "resumen": "Resumen de prueba de economía",
+    "fuentes": "",
+    "palabrasClave": [
+      "dinero",
+      "comercio"
+    ],
+    "objetivos": [
+      "Comprender la economía"
+    ],
+    "preguntasGuia": [],
+    "ejemplos": [],
+    "erroresFrecuentes": [],
+    "recursos": []
+  }
+]

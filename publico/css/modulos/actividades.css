@@ -1,0 +1,67 @@
+/* publico/css/modulos/actividades.css · Estilos para el catálogo de actividades */
+.actividades-encabezado {
+  margin-bottom: var(--espacio-l);
+}
+
+.actividades-encabezado__titulo {
+  font-size: var(--texto-2xl);
+  color: var(--color-primario);
+  margin: 0 0 var(--espacio-xs) 0;
+}
+
+.actividades-encabezado__descripcion {
+  font-size: var(--texto-m);
+  color: var(--color-texto-suave);
+  margin: 0;
+  line-height: var(--interlineado-base);
+}
+
+.grid-catalogo-actividades {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--espacio-l);
+}
+
+.tarjeta-actividad-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--espacio-l);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-l);
+  background-color: var(--color-superficie);
+  box-shadow: var(--sombra-1);
+  transition: transform var(--transicion), box-shadow var(--transicion), border-color var(--transicion);
+}
+
+.tarjeta-actividad-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-2);
+  border-color: var(--color-acento);
+}
+
+.tarjeta-actividad-item__cuerpo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espacio-s);
+  margin-bottom: var(--espacio-l);
+}
+
+.tarjeta-actividad-item__titulo {
+  font-size: var(--texto-l);
+  color: var(--color-primario);
+  margin: 0;
+  font-weight: var(--peso-seminegrita);
+}
+
+.tarjeta-actividad-item__descripcion {
+  font-size: var(--texto-s);
+  color: var(--color-texto-suave);
+  margin: 0;
+  line-height: var(--interlineado-base);
+}
+
+.tarjeta-actividad-item__pie {
+  display: flex;
+  justify-content: flex-start;
+}

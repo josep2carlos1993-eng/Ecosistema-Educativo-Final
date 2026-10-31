@@ -1,0 +1,26 @@
+[
+  {
+    "id": "uni_000001",
+    "asignaturaId": "asi_000001",
+    "titulo": "Ecuador a inicios del siglo XX: transformaciones sociales y políticas",
+    "orden": 2,
+    "visible": true,
+    "fecha": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "asignaturaId": "asi_000001",
+    "titulo": "Megadiversidad Ecuatoriana.",
+    "orden": 2,
+    "visible": true,
+    "id": "uni_000002",
+    "fecha": "2026-10-28T03:25:35.418Z"
+  },
+  {
+    "asignaturaId": "asi_000001",
+    "titulo": "Desarrollo del Ecuador",
+    "orden": 3,
+    "visible": true,
+    "id": "uni_000003",
+    "fecha": "2026-10-28T04:19:00.841Z"
+  }
+]
