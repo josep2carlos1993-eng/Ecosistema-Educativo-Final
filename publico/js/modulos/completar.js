@@ -83,16 +83,21 @@ function renderizarEstructura() {
           </p>
         </div>
 
-        <div style="display: flex; align-items: center; gap: var(--espacio-m);">
-          <span class="badge" style="background-color: var(--color-exito-fondo); color: var(--color-exito); font-weight: var(--peso-seminegrita);" id="marcador-aciertos">
-            ✅ 0
-          </span>
-          <span class="badge" style="background-color: var(--color-error-fondo); color: var(--color-error); font-weight: var(--peso-seminegrita);" id="marcador-errores">
-            ❌ 0
-          </span>
-          <span style="font-weight: var(--peso-seminegrita); color: var(--color-texto);" id="indicador-contador">
-            1 / ${retos.length}
-          </span>
+        <div style="display: flex; align-items: center; gap: var(--espacio-m); flex-wrap: wrap;">
+          <button type="button" class="btn btn--acento btn--pequeno" id="btn-ia-completar" title="Generar nuevos conceptos con Inteligencia Artificial">
+            ✨ Generar con IA
+          </button>
+          <div style="display: flex; align-items: center; gap: var(--espacio-m);">
+            <span class="badge" style="background-color: var(--color-exito-fondo); color: var(--color-exito); font-weight: var(--peso-seminegrita);" id="marcador-aciertos">
+              ✅ 0
+            </span>
+            <span class="badge" style="background-color: var(--color-error-fondo); color: var(--color-error); font-weight: var(--peso-seminegrita);" id="marcador-errores">
+              ❌ 0
+            </span>
+            <span style="font-weight: var(--peso-seminegrita); color: var(--color-texto);" id="indicador-contador">
+              1 / ${retos.length}
+            </span>
+          </div>
         </div>
       </div>
 
@@ -161,6 +166,11 @@ function conectarEventos() {
       e.preventDefault();
       await comprobarRespuesta();
     });
+  }
+
+  const btnIa = document.getElementById('btn-ia-completar');
+  if (btnIa) {
+    btnIa.addEventListener('click', manejarGenerarCompletarIA);
   }
 }
 
@@ -343,6 +353,73 @@ async function finalizarActividad() {
     mostrarRetoActual();
   } else {
     window.location.href = `/paginas/tema.html?id=${temaActual.id}`;
+  }
+}
+
+async function manejarGenerarCompletarIA() {
+  const btnIa = document.getElementById('btn-ia-completar');
+  if (!temaActual) return;
+
+  const textoOriginal = btnIa ? btnIa.innerHTML : '';
+  if (btnIa) {
+    btnIa.disabled = true;
+    btnIa.innerHTML = '⏳ Generando con IA...';
+  }
+
+  try {
+    const resp = await api.crear('ia/generar-glosario', {
+      temaId: temaActual.id,
+      cantidad: 10
+    });
+
+    const nuevos = (resp && Array.isArray(resp.guardados) && resp.guardados.length > 0)
+      ? resp.guardados
+      : (resp?.generados || resp?.palabras || []);
+
+    if (!nuevos || nuevos.length === 0) {
+      mostrarRetro({
+        correcto: false,
+        mensaje: 'No se generaron conceptos nuevos en este momento. Inténtalo de nuevo.'
+      });
+      return;
+    }
+
+    let agregadas = 0;
+    nuevos.forEach(item => {
+      if (!item || !item.termino || !item.definicion) return;
+      const existe = retos.some(r => r && r.termino && r.termino.toLowerCase() === item.termino.trim().toLowerCase());
+      if (!existe) {
+        retos.push({
+          id: item.id || `glo_ia_${Date.now()}_${Math.random().toString(36).slice(2, 6)}`,
+          termino: item.termino.trim(),
+          definicion: item.definicion.trim(),
+          pista: item.pista ? item.pista.trim() : 'Pista conceptual clave',
+          retroalimentacion: item.retroalimentacion || `Término didáctico sobre ${item.termino}.`
+        });
+        agregadas++;
+      }
+    });
+
+    retos = barajar([...retos]);
+    reiniciarEstado();
+    renderizarEstructura();
+    mostrarRetoActual();
+
+    mostrarRetro({
+      correcto: true,
+      mensaje: `¡Se incorporaron ${agregadas > 0 ? agregadas : 'nuevos'} conceptos formativos generados con IA!`
+    });
+  } catch (error) {
+    mostrarRetro({
+      correcto: false,
+      mensaje: error.message || 'No se pudo conectar con el modelo de IA. Inténtalo más tarde.'
+    });
+  } finally {
+    const btnActual = document.getElementById('btn-ia-completar');
+    if (btnActual) {
+      btnActual.disabled = false;
+      btnActual.innerHTML = textoOriginal || '✨ Generar con IA';
+    }
   }
 }
 
